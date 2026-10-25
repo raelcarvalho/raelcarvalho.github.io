@@ -102,7 +102,6 @@
      ------------------------------------------------------------------------ */
   const SCRAMBLE = '!<>-_\\/[]{}=+*^?#01';
   function scrambleTo(el, text, duration = 700) {
-    if (reduced) { el.textContent = text; return Promise.resolve(); }
     const from = el.textContent;
     const len = Math.max(from.length, text.length);
     const q = [];
@@ -130,7 +129,6 @@
   async function boot() {
     const el = $('.boot');
     document.body.classList.add('is-booting');
-    if (reduced) { el.remove(); document.body.classList.remove('is-booting'); document.body.classList.add('is-ready'); return; }
     const status = $('[data-boot-status]'), name = $('[data-boot-name]');
     requestAnimationFrame(() => el.classList.add('is-loading'));
     if (returning) {
@@ -197,7 +195,6 @@
     let i = 0;
     // Ao trocar o idioma, a frase atual já aparece no idioma novo.
     if (window.I18N) window.I18N.onChange(() => { el.textContent = tr(words[i]); });
-    if (reduced) return;
     setInterval(async () => {
       if (document.hidden) return;
       i = (i + 1) % words.length;
@@ -344,7 +341,6 @@
     const to = parseFloat(el.dataset.count);
     const fmt = new Intl.NumberFormat('pt-BR');
     const suf = el.dataset.suffix || '';
-    if (reduced) { el.textContent = fmt.format(to) + suf; return; }
     const t0 = performance.now(), dur = 1600;
     const tick = (now) => {
       const k = Math.min(1, (now - t0) / dur);
@@ -408,7 +404,7 @@
     const items = $$('.jr', wrap);
     const stage = $('[data-career-stage]');
     const renderer = window.CareerBlueprint && stage
-      ? window.CareerBlueprint.create(stage, { reducedMotion: reduced, snapshotTargets: items })
+      ? window.CareerBlueprint.create(stage, { reducedMotion: false, snapshotTargets: items })
       : null;
     let len = 0, wrapTop = 0, wrapH = 0, itemTops = [], metrics = [];
     let current = 0, goal = 0, raf = 0, first = true;
@@ -425,7 +421,7 @@
     };
     const steer = (progress) => {
       goal = progress;
-      if (reduced || first) {
+      if (first) {
         first = false;
         cancelAnimationFrame(raf); raf = 0;
         current = goal;
@@ -638,7 +634,6 @@
 
     const typeHost = (txt) => {
       clearInterval(typing);
-      if (reduced) { hostEl.textContent = txt; return; }
       let i = 0;
       hostEl.textContent = '';
       typing = setInterval(() => { hostEl.textContent = txt.slice(0, ++i); if (i >= txt.length) clearInterval(typing); }, 45);
@@ -730,13 +725,12 @@
       auto = false;
       clearTimeout(timer);
       render(b.dataset.ramo);
-      if (reduced) showDone(); else timer = setTimeout(tick, 500);
+      timer = setTimeout(tick, 500);
     });
 
     render(key);
 
     // sem movimento: mostra o fluxo inteiro concluído e só troca de ramo no clique
-    if (reduced) { showDone(); return; }
 
     if ('IntersectionObserver' in window) {
       new IntersectionObserver(([en]) => {
@@ -816,15 +810,15 @@
       if (area.classList.contains('is-open')) {
         // Fecha o pacote anterior e traz um novo
         area.classList.remove('is-open');
-        await sleep(reduced ? 0 : 450);
+        await sleep(450);
       }
       area.classList.add('is-shaking');
-      await sleep(reduced ? 0 : 650);
+      await sleep(650);
       area.classList.remove('is-shaking');
       reveal();
       area.classList.add('is-open');
       btn.textContent = 'Abrir outro pacote';
-      await sleep(reduced ? 0 : 900);
+      await sleep(900);
       busy = false;
     };
     $('[data-pack]').addEventListener('click', openPack);
@@ -961,7 +955,6 @@
   }
 
   async function stream(el, text, id) {
-    if (reduced) { el.textContent = text; return; }
     for (let i = 0; i <= text.length; i += 3) {
       if (id !== typing) { el.textContent = text; return; }
       el.innerHTML = `${text.slice(0, i)}<span class="msg__cursor"></span>`;
@@ -1054,30 +1047,46 @@
     });
   }
 
+
+  /* ------------------------------------------------------------------------
+     Celular: blocos longos mostram o resumo e escondem o resto atrás de
+     "ver mais". O CSS só esconde até 720px; acima disso o botão some.
+     ------------------------------------------------------------------------ */
+  function mobileFolds() {
+    const GROUPS = [
+      ['.jr__body', '.jr__wins, .jr__stack, .ladder'],
+      ['.case__info', '.case__list, .case__stack'],
+      ['.ai__copy', '.ai__points'],
+      ['[data-stack-bag]', '.inv__cat:nth-child(n+4)'],
+    ];
+    GROUPS.forEach(([box, hide]) => {
+      $$(box).forEach((el) => {
+        if (!el.querySelector(hide) && box !== '[data-stack-bag]') return;
+        el.classList.add('m-fold');
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'm-more mono';
+        btn.setAttribute('aria-expanded', 'false');
+        btn.innerHTML = '<span>ver mais</span><i aria-hidden="true">↓</i>';
+        btn.addEventListener('click', () => {
+          const open = el.classList.toggle('is-open');
+          btn.setAttribute('aria-expanded', String(open));
+          btn.firstElementChild.textContent = open ? 'ver menos' : 'ver mais';
+          if (!open) el.scrollIntoView({ block: 'nearest' });
+        });
+        // A sacola de conhecimentos é renderizada por JS: o botão vai depois dela.
+        if (box === '[data-stack-bag]') el.after(btn); else el.append(btn);
+      });
+    });
+  }
+
   /* ------------------------------------------------------------------------
      Início
      ------------------------------------------------------------------------ */
-  splitWords();
-  ticker();
-  heatmap();
-  stack();
-  lensSwitch();
-  initialChip();
-  clock();
-  reveals();
-  chapters();
-  journey();
-  scrollChrome();
-  field();
-  rotator();
-  agentDemo();
-  ordenahub();
-  vetnix();
-  holo();
-  copy();
-  dockInit();
-  forget();
-  renderMemorySummary();
+  // Cada parte roda isolada: se uma falhar num navegador antigo, as outras continuam.
+  [splitWords, ticker, heatmap, stack, lensSwitch, initialChip, clock, reveals, chapters, journey, scrollChrome, field, rotator, agentDemo, ordenahub, vetnix, holo, copy, dockInit, forget, renderMemorySummary, mobileFolds].forEach((fn) => {
+    try { fn(); } catch (err) { console.error(`[${fn.name}]`, err); }
+  });
   save();
   boot();
 })();
