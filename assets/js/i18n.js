@@ -72,7 +72,7 @@
     'Itaú Unibanco via TCS, Dia a Dia Benefícios (Startup criada pelo Mercadinho do Zé) e a Cadastra, onde levo IA generativa para produção': 'Itaú Unibanco via TCS, Dia a Dia Benefícios (a startup created by Mercadinho do Zé) and Cadastra, where I take generative AI to production',
     'Itaú Unibanco via TCS, uma plataforma de seguro de vida e a Cadastra, onde levo IA generativa para produção': 'Itaú Unibanco via TCS, a life insurance platform and Cadastra, where I take generative AI to production',
     'tipos de nota fiscal': 'types of tax invoice',
-    'NF-e, NFC-e e NFS-e emitidas direto na SEFAZ pelo OrdenaHub, ERP que criei sozinho': 'NF-e, NFC-e and NFS-e issued straight to SEFAZ by OrdenaHub, the ERP I built on my own',
+    'NF-e, NFC-e e NFS-e emitidas direto na SEFAZ pelo OrdenaHub': 'NF-e, NFC-e and NFS-e issued straight to SEFAZ by OrdenaHub',
     // Carreira
     'Cada etapa somou uma camada: infraestrutura, sistemas bancários de missão crítica, eventos e pagamentos, e agora agentes inteligentes.': 'Each step added a layer: infrastructure, mission-critical banking systems, events and payments, and now intelligent agents.',
     'Profissional completo': 'The full professional', 'IA, agentes e produtos': 'AI, agents and products',
