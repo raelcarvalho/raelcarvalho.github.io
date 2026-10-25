@@ -225,7 +225,7 @@
     'copiar': 'copy', 'abrir ↗': 'open ↗', 'currículo': 'résumé', 'PDF, 4 páginas': 'PDF, 4 pages', 'baixar ↓': 'download ↓', 'E-mail copiado': 'Email copied',
     'O que este site lembra de você': 'What this site remembers about you', 'Nada ainda.': 'Nothing yet.', 'Esquecer minha visita': 'Forget my visit',
     'Memória apagada. Para este site, você é uma visita nova.': 'Memory cleared. To this site, you are a new visitor.', 'Memória apagada': 'Memory cleared',
-    'Feito à mão por Rafael Carvalho · 2026 · a memória fica só no seu navegador, nada é enviado.': 'Handmade by Rafael Carvalho · 2026 · memory stays in your browser only, nothing is sent.',
+    'Feito à mão por Rafael Carvalho · 2026 · a memória fica só no seu navegador; só a contagem anônima de visitas sai daqui.': 'Handmade by Rafael Carvalho · 2026 · memory stays in your browser; only an anonymous visit count leaves it.', 'visitas': 'visits', 'visita': 'visit',
     // Assistente
     'Pergunte ao portfólio': 'Ask the portfolio', 'respostas escritas pelo Rafael · cada uma mostra a fonte': 'answers written by Rafael · each one shows its source',
     'Enviar': 'Send', 'Fechar': 'Close', 'Sua pergunta': 'Your question', 'Ex.: onde você já trabalhou?': 'E.g.: where have you worked?',

@@ -969,3 +969,12 @@ body.is-ready .line__in { transform: none; }
   .contact__card > .mono { display: none; }
   .contact__card b { font-size: var(--text-sm); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 }
+
+/* Contador de visitas no selo do topo */
+.status-pill__visits { display: inline-flex; align-items: center; gap: 5px; animation: stepIn 0.5s var(--ease-out) both; }
+.status-pill__visits[hidden] { display: none; }
+.status-pill__visits .sep { margin-right: 2px; }
+.status-pill__visits b { font-weight: 600; color: var(--text); font-variant-numeric: tabular-nums; }
+.status-pill__eye { width: 13px; height: 9px; border: 1.5px solid var(--accent); border-radius: 50% / 60%; position: relative; }
+.status-pill__eye::after { content: ''; position: absolute; inset: 0; margin: auto; width: 4px; height: 4px; border-radius: 50%; background: var(--accent); }
+@media (max-width: 420px) { .status-pill { flex-wrap: wrap; row-gap: 2px; } }

@@ -1080,11 +1080,48 @@
     });
   }
 
+
+  /* ------------------------------------------------------------------------
+     Contador de visitas: serviço gratuito e anônimo (abacus), uma visita por
+     sessão. Em localhost só lê o total. Se o serviço cair, o selo some.
+     ------------------------------------------------------------------------ */
+  function visits() {
+    const box = $('[data-visits]'), num = $('[data-visits-n]');
+    if (!box || !num || !window.fetch) return;
+    const API = 'https://abacus.jasoncameron.dev';
+    const KEY = 'raelcarvalho-github-io/visits';
+    const local = /^(localhost|127\.|0\.0\.0\.0|\[::1\])/.test(location.hostname);
+    let counted = false;
+    try { counted = sessionStorage.getItem('rc-visit') === '1'; } catch (e) { /* aba privada */ }
+    const action = local || counted ? 'get' : 'hit';
+    const ctrl = new AbortController();
+    setTimeout(() => ctrl.abort(), 6000);
+    fetch(`${API}/${action}/${KEY}`, { signal: ctrl.signal })
+      .then((r) => (r.ok ? r.json() : Promise.reject(r.status)))
+      .then(({ value }) => {
+        if (!Number.isFinite(value) || value < 1) return;
+        if (action === 'hit') { try { sessionStorage.setItem('rc-visit', '1'); } catch (e) { /* ok */ } }
+        const fmt = () => value.toLocaleString(document.documentElement.lang.startsWith('en') ? 'en-US' : 'pt-BR');
+        box.hidden = false;
+        $('[data-visits-w]').textContent = value === 1 ? 'visita' : 'visitas';
+        // conta de 0 até o total em ~1,2s
+        const t0 = performance.now(), dur = 1200;
+        const step = (t) => {
+          const k = Math.min(1, (t - t0) / dur), v = Math.round(value * (1 - Math.pow(1 - k, 3)));
+          num.textContent = k < 1 ? v.toLocaleString('pt-BR') : fmt();
+          if (k < 1) requestAnimationFrame(step);
+        };
+        requestAnimationFrame(step);
+        if (window.I18N) window.I18N.onChange(() => { num.textContent = fmt(); });
+      })
+      .catch(() => { /* sem contador, sem selo */ });
+  }
+
   /* ------------------------------------------------------------------------
      Início
      ------------------------------------------------------------------------ */
   // Cada parte roda isolada: se uma falhar num navegador antigo, as outras continuam.
-  [splitWords, ticker, heatmap, stack, lensSwitch, initialChip, clock, reveals, chapters, journey, scrollChrome, field, rotator, agentDemo, ordenahub, vetnix, holo, copy, dockInit, forget, renderMemorySummary, mobileFolds].forEach((fn) => {
+  [splitWords, ticker, heatmap, stack, lensSwitch, initialChip, clock, reveals, chapters, journey, scrollChrome, field, rotator, agentDemo, ordenahub, vetnix, holo, copy, dockInit, forget, renderMemorySummary, mobileFolds, visits].forEach((fn) => {
     try { fn(); } catch (err) { console.error(`[${fn.name}]`, err); }
   });
   save();
