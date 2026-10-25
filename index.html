@@ -1,0 +1,640 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rafael Carvalho — Engenheiro de software</title>
+  <meta name="description" content="Rafael Carvalho, engenheiro de software full stack. Mais de 5 anos em sistemas financeiros (Itaú Unibanco via TCS), seguros e IA generativa na Cadastra. Criador do OrdenaHub, Vetnix e Mix Awards." />
+  <meta name="theme-color" content="#0b0c0a" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=Geist:wght@300..700&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/tokens.css" />
+  <link rel="stylesheet" href="assets/css/styles.css?v=lang-4" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230b0c0a'/%3E%3Ctext x='16' y='21' font-family='monospace' font-size='14' font-weight='700' fill='%23c8f560' text-anchor='middle'%3Erc%3C/text%3E%3C/svg%3E" />
+</head>
+<body data-lens="rec">
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- Abertura: completa na primeira visita; quem volta vê uma versão curta -->
+  <div class="boot" aria-hidden="true">
+    <div class="boot__inner">
+      <p class="boot__line"><span class="boot__prompt">~/</span><span class="boot__name" data-boot-name>rafael.carvalho</span><span class="boot__caret"></span></p>
+      <p class="boot__status" data-boot-status>carregando trajetória…</p>
+      <div class="boot__bar"><span></span></div>
+    </div>
+  </div>
+
+  <div class="grain" aria-hidden="true"></div>
+  <div class="progress" aria-hidden="true"><span></span></div>
+
+  <header class="header">
+    <a class="brand" href="#inicio" aria-label="Rafael Carvalho, início">
+      <span class="brand__mark">rc</span>
+      <span class="brand__name">rafael carvalho</span>
+    </a>
+    <nav class="nav" aria-label="Seções">
+      <a href="#carreira">Carreira</a>
+      <a href="#ia">IA</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#stack">Conhecimentos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <div class="header__actions">
+      <div class="lang" role="group" aria-label="Idioma" data-lang-switch data-active="pt" data-i18n-skip>
+        <span class="lang__thumb" aria-hidden="true"></span>
+        <button type="button" data-lang="pt" aria-pressed="true" lang="pt-BR" title="Português"><span class="lang__code">PT</span></button>
+        <button type="button" data-lang="en" aria-pressed="false" lang="en" title="English"><span class="lang__code">EN</span></button>
+      </div>
+      <button class="ask-btn" type="button" data-open-agent>
+        <span class="ask-btn__pulse" aria-hidden="true"></span>
+        Perguntar
+        <kbd>Ctrl K</kbd>
+      </button>
+    </div>
+  </header>
+
+  <!-- Trilho lateral: em que capítulo o visitante está -->
+  <aside class="rail" aria-hidden="true">
+    <span class="rail__num" data-rail-num>01</span>
+    <span class="rail__track"><span class="rail__fill" data-rail-fill></span></span>
+    <span class="rail__label" data-rail-label>início</span>
+  </aside>
+
+  <main id="conteudo">
+    <!-- ============================== HERO ============================== -->
+    <section id="inicio" class="hero" data-tone="lime" data-chapter="início">
+      <canvas class="hero__field" data-field aria-hidden="true"></canvas>
+      <div class="hero__veil" aria-hidden="true"></div>
+
+      <div class="hero__top container">
+        <p class="status-pill"><span class="status-pill__dot"></span>Aberto a novas oportunidades <span class="sep">·</span> Ourinhos, SP <span class="sep">·</span> <time data-clock>--:--</time></p>
+        <p class="mono dim hero__build">desde 2020 desenvolvendo · 384 contribuições no último ano</p>
+      </div>
+
+      <div class="hero__body container">
+        <p class="kicker reveal">Engenheiro de software full stack <span class="sep">/</span> IA generativa <span class="sep">/</span> Sistemas financeiros</p>
+        <h1 class="hero__name">
+          <span class="line"><span class="line__in">Rafael Carvalho</span></span>
+        </h1>
+        <p class="hero__tagline"><span class="line"><span class="line__in">Construo <em class="rotator" data-rotator>sistemas financeiros.</em></span></span></p>
+
+        <div class="hero__grid">
+          <div class="hero__lede reveal">
+            <p data-lens-only="rec">Mais de cinco anos construindo software onde falhar custa caro. Passei pelos microsserviços de antifraude, pagamentos e dados regulatórios do <strong>Itaú Unibanco</strong>, por uma plataforma de seguros integrada a meios de pagamento e, hoje, desenvolvo agentes de IA generativa na <strong>Cadastra</strong>. Em paralelo, criei três produtos completos, do banco de dados à interface.</p>
+            <p data-lens-only="dev"><strong>Java e Spring Boot</strong> com Kafka em microsserviços bancários. <strong>Node.js e TypeScript</strong> com filas, eventos e Lambda na AWS. Agora, <strong>servidores MCP, RAG e orquestração de agentes</strong> em produção. Arquitetura hexagonal, SaaS multiempresa, emissão fiscal na SEFAZ e observabilidade fazem parte do meu dia a dia, não de uma lista de desejos.</p>
+            <p data-lens-only="cli">Transformo a operação da sua empresa em sistema. <strong>ERP com nota fiscal</strong>, financeiro e estoque; <strong>gestão clínica</strong> com agenda, prontuário e cobrança; plataformas com <strong>IA que faz o trabalho repetitivo</strong> pela equipe. Já construí sistemas pensados para assistências técnicas, usinagens, comércio, clínicas veterinárias e comunidades de jogadores.</p>
+            <div class="hero__ctas">
+              <a class="btn btn--primary" href="#carreira">Ver carreira <span aria-hidden="true">↓</span></a>
+              <a class="btn btn--ghost" href="assets/docs/curriculo-rafael-carvalho.pdf" download>Baixar currículo</a>
+            </div>
+          </div>
+
+          <div class="lens-card reveal" role="group" aria-labelledby="lens-title">
+            <p class="lens-card__title" id="lens-title">Como você quer ler este portfólio?</p>
+            <div class="lens-switch" data-lens-switch>
+              <button type="button" data-lens="rec" aria-pressed="true"><span>Recrutador</span><small>trajetória e impacto</small></button>
+              <button type="button" data-lens="dev" aria-pressed="false"><span>Dev</span><small>arquitetura e stack</small></button>
+              <button type="button" data-lens="cli" aria-pressed="false"><span>Cliente</span><small>o que eu entrego</small></button>
+            </div>
+            <p class="memory-chip" data-memory-chip>
+              <span class="memory-chip__icon" aria-hidden="true">◎</span>
+              <span data-memory-text>Primeira visita. O texto da página se adapta ao modo escolhido, e eu lembro dele na próxima vez.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <a class="scroll-cue" href="#numeros" aria-label="Rolar para baixo">
+        <span class="mono">role · o ruído vira ordem</span>
+        <span class="scroll-cue__line" aria-hidden="true"></span>
+      </a>
+    </section>
+
+    <!-- Commits de maior impacto, em loop, com recorte do quadro de atividade -->
+    <div class="ticker" aria-label="Commits de maior impacto nos produtos">
+      <div class="ticker__track" data-ticker></div>
+    </div>
+
+    <!-- ============================== NÚMEROS ============================== -->
+    <section id="numeros" class="metrics container" data-tone="lime" data-chapter="em números">
+      <header class="section-head">
+        <p class="eyebrow"><span class="eyebrow__num">01</span> Em números</p>
+        <h2 class="section-title split">Uma trajetória que se <em>soma</em>.</h2>
+      </header>
+      <div class="metrics__grid">
+        <article class="metric reveal">
+          <p class="metric__value"><span data-count="5" data-suffix="+">0</span><small>anos</small></p>
+          <p class="metric__label">desenvolvendo software profissionalmente, desde dezembro de 2020</p>
+        </article>
+        <article class="metric reveal">
+          <p class="metric__value"><span data-count="10" data-suffix="+">0</span><small>anos</small></p>
+          <p class="metric__label">em tecnologia, começando pelo suporte técnico em 2015</p>
+        </article>
+        <article class="metric reveal">
+          <p class="metric__value"><span data-count="3">0</span><small>produtos</small></p>
+          <p class="metric__label">próprios em produção: ERP SaaS, gestão veterinária e plataforma gamer</p>
+        </article>
+        <article class="metric reveal">
+          <p class="metric__value"><span data-count="4">0</span><small>frentes críticas</small></p>
+          <p class="metric__label">no Itaú Unibanco, o maior banco privado do país: antifraude, pagamentos, dados ao Banco Central e limite da conta</p>
+        </article>
+        <article class="metric reveal">
+          <p class="metric__value"><span data-count="3">0</span><small>empresas de peso</small></p>
+          <p class="metric__label">Itaú Unibanco via TCS, Dia a Dia Benefícios (Startup criada pelo Mercadinho do Zé) e a Cadastra, onde levo IA generativa para produção</p>
+        </article>
+        <article class="metric reveal">
+          <p class="metric__value"><span data-count="3">0</span><small>tipos de nota fiscal</small></p>
+          <p class="metric__label">NF-e, NFC-e e NFS-e emitidas direto na SEFAZ pelo OrdenaHub, ERP que criei sozinho</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============================== CARREIRA ============================== -->
+    <section id="carreira" class="journey container" data-tone="lime" data-chapter="carreira">
+      <header class="section-head">
+        <p class="eyebrow"><span class="eyebrow__num">02</span> Carreira</p>
+        <h2 class="section-title split">Do suporte técnico à <em>IA generativa</em>.</h2>
+        <p class="lead reveal">Cada etapa somou uma camada: infraestrutura, sistemas bancários de missão crítica, eventos e pagamentos, e agora agentes inteligentes.</p>
+      </header>
+
+      <div class="journey__grid">
+      <aside class="career-stage" data-career-stage data-career-layout="desktop" data-career-active="cadastra" aria-hidden="true">
+        <div class="career-stage__frame">
+          <span class="career-stage__corner career-stage__corner--tl"></span>
+          <span class="career-stage__corner career-stage__corner--br"></span>
+          <svg viewBox="0 0 48 56" class="career-stage__svg" shape-rendering="crispEdges" data-career-sprite>
+            <!-- Pixel art original: o mesmo Rafael em quatro fases, do presente à origem. -->
+            <g class="sprite-floor"><path class="px-metal2" d="M0 48h48v1h-48z"/><path class="px-device" d="M0 49h1v1h-1zM2 49h1v1h-1zM4 49h1v1h-1zM6 49h1v1h-1zM8 49h1v1h-1zM10 49h1v1h-1zM12 49h1v1h-1zM14 49h1v1h-1zM16 49h1v1h-1zM18 49h1v1h-1zM20 49h1v1h-1zM22 49h1v1h-1zM24 49h1v1h-1zM26 49h1v1h-1zM28 49h1v1h-1zM30 49h1v1h-1zM32 49h1v1h-1zM34 49h1v1h-1zM36 49h1v1h-1zM38 49h1v1h-1zM40 49h1v1h-1zM42 49h1v1h-1zM44 49h1v1h-1zM46 49h1v1h-1z"/><path class="px-ink" d="M8 48h12v1h-12z"/></g>
+            <g data-career-layer="cadastra" class="sprite-frame sprite-frame--cadastra">
+              <path class="px-ink" d="M26 36h19v1h-19zM26 37h1v1h-1zM44 37h1v1h-1zM26 38h1v1h-1zM44 38h1v1h-1zM27 39h1v1h-1zM29 39h1v1h-1zM41 39h1v1h-1zM43 39h1v1h-1zM27 40h1v1h-1zM29 40h1v1h-1zM41 40h1v1h-1zM43 40h1v1h-1zM27 41h1v1h-1zM29 41h1v1h-1zM41 41h1v1h-1zM43 41h1v1h-1zM27 42h1v1h-1zM29 42h1v1h-1zM41 42h1v1h-1zM43 42h1v1h-1zM27 43h1v1h-1zM29 43h1v1h-1zM41 43h1v1h-1zM43 43h1v1h-1zM27 44h1v1h-1zM29 44h1v1h-1zM41 44h1v1h-1zM43 44h1v1h-1zM27 45h1v1h-1zM29 45h1v1h-1zM41 45h1v1h-1zM43 45h1v1h-1zM27 46h1v1h-1zM29 46h1v1h-1zM41 46h1v1h-1zM43 46h1v1h-1zM27 47h3v1h-3zM41 47h3v1h-3z"/><path class="px-metal" d="M27 37h17v1h-17z"/><path class="px-metal2" d="M27 38h17v1h-17zM28 39h1v1h-1zM42 39h1v1h-1zM28 40h1v1h-1zM42 40h1v1h-1zM28 41h1v1h-1zM42 41h1v1h-1zM28 42h1v1h-1zM42 42h1v1h-1zM28 43h1v1h-1zM42 43h1v1h-1zM28 44h1v1h-1zM42 44h1v1h-1zM28 45h1v1h-1zM42 45h1v1h-1zM28 46h1v1h-1zM42 46h1v1h-1z"/>
+              <path class="px-ink" d="M29 26h12v1h-12zM29 27h1v1h-1zM40 27h1v1h-1zM29 28h1v1h-1zM40 28h1v1h-1zM29 29h1v1h-1zM40 29h1v1h-1zM29 30h1v1h-1zM40 30h1v1h-1zM29 31h1v1h-1zM40 31h1v1h-1zM29 32h1v1h-1zM40 32h1v1h-1zM29 33h1v1h-1zM40 33h1v1h-1zM28 34h14v1h-14zM28 35h1v1h-1zM41 35h1v1h-1z"/><path class="px-device" d="M30 27h10v1h-10zM30 28h1v1h-1zM39 28h1v1h-1zM30 29h1v1h-1zM39 29h1v1h-1zM30 30h1v1h-1zM39 30h1v1h-1zM30 31h1v1h-1zM39 31h1v1h-1zM30 32h1v1h-1zM39 32h1v1h-1zM30 33h1v1h-1zM39 33h1v1h-1z"/><path class="px-screen" d="M31 28h8v1h-8zM31 29h2v1h-2zM34 29h2v1h-2zM37 29h2v1h-2zM31 30h1v1h-1zM33 30h1v1h-1zM35 30h1v1h-1zM37 30h2v1h-2zM31 31h1v1h-1zM35 31h1v1h-1zM37 31h2v1h-2zM31 32h1v1h-1zM33 32h1v1h-1zM35 32h1v1h-1zM37 32h2v1h-2zM31 33h8v1h-8z"/><path class="px-glow" d="M33 29h1v1h-1zM36 29h1v1h-1zM32 30h1v1h-1zM34 30h1v1h-1zM36 30h1v1h-1zM32 31h3v1h-3zM36 31h1v1h-1zM32 32h1v1h-1zM34 32h1v1h-1zM36 32h1v1h-1z"/><path class="px-metal" d="M29 35h12v1h-12z"/>
+              <g class="px-float"><path class="px-ink" d="M37 15h9v1h-9zM37 16h1v1h-1zM45 16h1v1h-1zM37 17h1v1h-1zM45 17h1v1h-1zM37 18h1v1h-1zM45 18h1v1h-1zM37 19h9v1h-9zM38 20h2v1h-2zM38 21h1v1h-1z"/><path class="px-white" d="M38 16h7v1h-7zM38 17h1v1h-1zM40 17h1v1h-1zM42 17h1v1h-1zM44 17h1v1h-1zM38 18h7v1h-7z"/><path class="px-tone" d="M39 17h1v1h-1zM41 17h1v1h-1zM43 17h1v1h-1z"/></g>
+              <g class="px-float"><path class="px-cadastra" d="M8 4h5v1h-5zM6 5h9v1h-9zM5 6h11v1h-11zM5 7h3v1h-3zM12 7h4v1h-4zM4 8h3v1h-3zM15 8h2v1h-2zM4 9h2v1h-2zM9 9h4v1h-4zM15 9h2v1h-2zM4 10h2v1h-2zM8 10h9v1h-9zM4 11h2v1h-2zM9 11h8v1h-8zM4 12h3v1h-3zM10 12h3v1h-3zM15 12h2v1h-2zM5 13h3v1h-3zM14 13h2v1h-2zM5 14h4v1h-4zM13 14h3v1h-3zM6 15h9v1h-9zM8 16h5v1h-5z"/><path class="px-white" d="M8 7h4v1h-4zM7 8h6v1h-6zM6 9h3v1h-3zM6 10h2v1h-2zM6 11h3v1h-3zM7 12h3v1h-3zM13 12h2v1h-2zM8 13h6v1h-6zM9 14h4v1h-4z"/><path class="px-ink" d="M13 8h2v1h-2zM13 9h2v1h-2z"/></g>
+              <g class="px-hero"><path class="px-ink" d="M10 23h9v1h-9zM9 24h1v1h-1zM19 24h1v1h-1zM8 25h1v1h-1zM20 25h1v1h-1zM8 26h1v1h-1zM19 26h1v1h-1zM8 27h1v1h-1zM19 27h1v1h-1zM7 28h1v1h-1zM20 28h1v1h-1zM7 29h1v1h-1zM11 29h1v1h-1zM16 29h1v1h-1zM20 29h1v1h-1zM8 30h1v1h-1zM19 30h1v1h-1zM8 31h1v1h-1zM19 31h1v1h-1zM8 32h1v1h-1zM19 32h1v1h-1zM8 33h1v1h-1zM19 33h1v1h-1zM9 34h1v1h-1zM18 34h1v1h-1zM10 35h1v1h-1zM17 35h1v1h-1zM12 36h1v1h-1zM15 36h1v1h-1zM9 37h10v1h-10zM8 38h1v1h-1zM19 38h1v1h-1zM7 39h1v1h-1zM20 39h1v1h-1zM7 40h1v1h-1zM10 40h1v1h-1zM17 40h1v1h-1zM20 40h1v1h-1zM7 41h1v1h-1zM10 41h1v1h-1zM17 41h1v1h-1zM20 41h1v1h-1zM7 42h1v1h-1zM10 42h1v1h-1zM17 42h1v1h-1zM20 42h1v1h-1zM7 43h1v1h-1zM10 43h1v1h-1zM17 43h1v1h-1zM20 43h1v1h-1zM8 44h3v1h-3zM17 44h3v1h-3zM10 45h1v1h-1zM13 45h2v1h-2zM17 45h1v1h-1zM10 46h1v1h-1zM13 46h2v1h-2zM17 46h1v1h-1zM9 47h1v1h-1zM13 47h2v1h-2zM18 47h1v1h-1z"/><path class="px-hair" d="M10 24h7v1h-7zM18 24h1v1h-1zM9 25h8v1h-8zM19 25h1v1h-1zM9 26h10v1h-10z"/><path class="px-hair2" d="M17 24h1v1h-1zM17 25h2v1h-2z"/><path class="px-fade" d="M9 27h1v1h-1zM18 27h1v1h-1zM8 28h1v1h-1zM19 28h1v1h-1z"/><path class="px-skin" d="M10 27h8v1h-8zM9 28h1v1h-1zM12 28h4v1h-4zM18 28h1v1h-1zM8 29h1v1h-1zM10 29h1v1h-1zM17 29h1v1h-1zM19 29h1v1h-1zM10 30h2v1h-2zM13 30h2v1h-2zM16 30h2v1h-2zM9 31h1v1h-1zM12 31h1v1h-1zM14 31h2v1h-2zM18 31h1v1h-1zM9 32h2v1h-2zM17 32h2v1h-2zM10 33h2v1h-2zM16 33h2v1h-2zM11 34h2v1h-2zM15 34h2v1h-2zM13 36h2v1h-2zM8 43h2v1h-2zM18 43h2v1h-2z"/><path class="px-glasses" d="M10 28h2v1h-2zM16 28h2v1h-2zM9 29h1v1h-1zM12 29h4v1h-4zM18 29h1v1h-1zM9 30h1v1h-1zM12 30h1v1h-1zM15 30h1v1h-1zM18 30h1v1h-1zM10 31h2v1h-2zM16 31h2v1h-2z"/><path class="px-skin2" d="M13 31h1v1h-1z"/><path class="px-beard" d="M11 32h6v1h-6zM9 33h1v1h-1zM18 33h1v1h-1zM10 34h1v1h-1zM13 34h2v1h-2zM17 34h1v1h-1zM11 35h6v1h-6z"/><path class="px-lips" d="M12 33h4v1h-4z"/><path class="px-tone" d="M9 38h1v1h-1zM11 38h6v1h-6zM18 38h1v1h-1zM8 39h3v1h-3zM12 39h4v1h-4zM17 39h3v1h-3zM8 40h2v1h-2zM11 40h1v1h-1zM16 40h1v1h-1zM18 40h2v1h-2zM8 41h2v1h-2zM11 41h6v1h-6zM18 41h2v1h-2zM11 42h6v1h-6z"/><path class="px-silver" d="M10 38h1v1h-1zM17 38h1v1h-1zM11 39h1v1h-1zM16 39h1v1h-1zM12 40h4v1h-4z"/><path class="px-tone2" d="M8 42h2v1h-2zM18 42h2v1h-2zM11 43h6v1h-6z"/><path class="px-pants" d="M11 44h6v1h-6zM11 45h2v1h-2zM15 45h2v1h-2zM11 46h2v1h-2zM15 46h2v1h-2z"/><path class="px-shoe" d="M10 47h3v1h-3zM15 47h3v1h-3z"/></g>
+              <g class="px-blink-a"><path class="px-spark" d="M27 7h1v1h-1zM26 8h3v1h-3zM27 9h1v1h-1z"/></g>
+              <g class="px-blink-a"><path class="px-spark" d="M45 9h1v1h-1zM44 10h3v1h-3zM45 11h1v1h-1z"/></g>
+              <g class="px-blink-a"><path class="px-glow" d="M31 20h1v1h-1z"/></g>
+              <g class="px-blink-a"><path class="px-spark" d="M2 19h1v1h-1zM1 20h3v1h-3zM2 21h1v1h-1z"/></g>
+              <g class="px-blink-b"><path class="px-spark" d="M33 2h1v1h-1zM32 3h3v1h-3zM33 4h1v1h-1z"/></g>
+              <g class="px-blink-b"><path class="px-spark" d="M25 17h1v1h-1zM24 18h3v1h-3zM25 19h1v1h-1z"/></g>
+              <g class="px-blink-b"><path class="px-glow" d="M19 9h1v1h-1z"/></g>
+              <g class="px-blink-b"><path class="px-glow" d="M46 23h1v1h-1z"/></g>
+            </g>
+            <g data-career-layer="seguros" class="sprite-frame sprite-frame--seguros">
+              <g class="px-float"><path class="px-ink" d="M33 3h3v1h-3zM31 4h2v1h-2zM36 4h2v1h-2zM30 5h1v1h-1zM38 5h1v1h-1zM29 6h1v1h-1zM39 6h1v1h-1zM28 7h1v1h-1zM40 7h1v1h-1zM27 8h1v1h-1zM41 8h1v1h-1zM27 9h2v1h-2zM30 9h2v1h-2zM33 9h3v1h-3zM37 9h2v1h-2zM40 9h2v1h-2z"/><path class="px-tone" d="M33 4h1v1h-1zM35 4h1v1h-1zM31 5h3v1h-3zM35 5h3v1h-3zM30 6h3v1h-3zM36 6h3v1h-3zM29 7h4v1h-4zM36 7h4v1h-4zM28 8h5v1h-5zM36 8h5v1h-5zM29 9h1v1h-1zM32 9h1v1h-1zM36 9h1v1h-1zM39 9h1v1h-1z"/><path class="px-white" d="M34 4h1v1h-1zM34 5h1v1h-1zM33 6h3v1h-3zM33 7h3v1h-3zM33 8h3v1h-3z"/></g>
+              <path class="px-ink" d="M31 11h3v1h-3zM35 11h3v1h-3zM30 12h1v1h-1zM34 12h1v1h-1zM38 12h1v1h-1zM30 13h1v1h-1zM38 13h1v1h-1zM30 14h1v1h-1zM38 14h1v1h-1zM31 15h1v1h-1zM37 15h1v1h-1zM32 16h1v1h-1zM36 16h1v1h-1zM33 17h1v1h-1zM35 17h1v1h-1zM34 18h1v1h-1z"/><path class="px-red" d="M31 12h3v1h-3zM35 12h3v1h-3zM31 13h1v1h-1zM33 13h5v1h-5zM31 14h7v1h-7zM32 15h5v1h-5zM33 16h3v1h-3zM34 17h1v1h-1z"/><path class="px-white" d="M32 13h1v1h-1z"/>
+              <g class="px-blink-a"><path class="px-glow" d="M24 6h1v1h-1zM30 8h1v1h-1z"/></g>
+              <g class="px-blink-b"><path class="px-glow" d="M44 12h1v1h-1zM38 14h1v1h-1z"/></g>
+              <path class="px-ink" d="M22 21h7v1h-7zM22 22h1v1h-1zM28 22h1v1h-1zM22 23h1v1h-1zM28 23h1v1h-1zM22 24h1v1h-1zM28 24h1v1h-1zM22 25h1v1h-1zM28 25h1v1h-1zM22 26h7v1h-7z"/><path class="px-tone" d="M23 22h1v1h-1zM27 22h1v1h-1zM24 23h1v1h-1zM26 23h1v1h-1zM25 24h1v1h-1z"/><path class="px-white" d="M24 22h3v1h-3zM23 23h1v1h-1zM25 23h1v1h-1zM27 23h1v1h-1zM23 24h2v1h-2zM26 24h2v1h-2zM23 25h5v1h-5z"/>
+              <path class="px-ink" d="M30 22h1v1h-1zM30 23h1v1h-1zM30 24h1v1h-1z"/><path class="px-metal" d="M29 23h1v1h-1z"/>
+              <path class="px-ink" d="M31 21h7v1h-7zM31 22h1v1h-1zM37 22h1v1h-1zM31 23h1v1h-1zM37 23h1v1h-1zM31 24h1v1h-1zM37 24h1v1h-1zM31 25h1v1h-1zM37 25h1v1h-1zM31 26h7v1h-7z"/><path class="px-glow" d="M32 22h2v1h-2zM34 23h1v1h-1zM33 24h1v1h-1zM35 24h1v1h-1zM32 25h1v1h-1zM36 25h1v1h-1z"/><path class="px-screen" d="M34 22h3v1h-3zM32 23h2v1h-2zM35 23h2v1h-2zM32 24h1v1h-1zM34 24h1v1h-1zM36 24h1v1h-1zM33 25h3v1h-3z"/>
+              <path class="px-ink" d="M39 22h1v1h-1zM39 23h1v1h-1zM39 24h1v1h-1z"/><path class="px-metal" d="M38 23h1v1h-1z"/>
+              <path class="px-ink" d="M40 21h7v1h-7zM40 22h1v1h-1zM46 22h1v1h-1zM40 23h1v1h-1zM46 23h1v1h-1zM40 24h1v1h-1zM46 24h1v1h-1zM40 25h1v1h-1zM46 25h1v1h-1zM40 26h7v1h-7z"/><path class="px-screen" d="M41 22h4v1h-4zM41 23h3v1h-3zM45 23h1v1h-1zM42 24h1v1h-1zM44 24h2v1h-2zM41 25h1v1h-1zM43 25h3v1h-3z"/><path class="px-green" d="M45 22h1v1h-1zM44 23h1v1h-1zM41 24h1v1h-1zM43 24h1v1h-1zM42 25h1v1h-1z"/>
+              <g class="px-event-short"><path class="px-spark" d="M29 23h1v1h-1z"/></g>
+              <path class="px-ink" d="M25 35h10v1h-10zM25 36h1v1h-1zM34 36h1v1h-1zM25 37h1v1h-1zM34 37h1v1h-1zM25 38h1v1h-1zM34 38h1v1h-1zM25 39h1v1h-1zM34 39h1v1h-1zM25 40h1v1h-1zM34 40h1v1h-1zM25 41h1v1h-1zM34 41h1v1h-1zM25 42h1v1h-1zM34 42h1v1h-1zM25 43h1v1h-1zM34 43h1v1h-1zM25 44h1v1h-1zM34 44h1v1h-1zM25 45h1v1h-1zM34 45h1v1h-1zM25 46h1v1h-1zM34 46h1v1h-1zM25 47h10v1h-10z"/><path class="px-white" d="M26 36h8v1h-8zM26 37h2v1h-2zM29 37h1v1h-1zM31 37h3v1h-3zM26 38h1v1h-1zM32 38h2v1h-2zM26 39h2v1h-2zM31 39h3v1h-3zM26 40h3v1h-3zM30 40h4v1h-4zM26 41h8v1h-8zM26 42h1v1h-1zM33 42h1v1h-1zM26 43h8v1h-8zM26 44h1v1h-1zM32 44h2v1h-2zM26 45h8v1h-8zM26 46h5v1h-5zM33 46h1v1h-1z"/><path class="px-red" d="M28 37h1v1h-1zM30 37h1v1h-1zM27 38h5v1h-5zM28 39h3v1h-3zM29 40h1v1h-1z"/><path class="px-metal" d="M27 42h6v1h-6zM27 44h5v1h-5z"/><path class="px-tone" d="M31 46h2v1h-2z"/>
+              <path class="px-ink" d="M36 41h11v1h-11zM36 42h1v1h-1zM46 42h1v1h-1zM36 43h1v1h-1zM46 43h1v1h-1zM36 44h1v1h-1zM46 44h1v1h-1zM36 45h1v1h-1zM46 45h1v1h-1zM36 46h1v1h-1zM46 46h1v1h-1zM36 47h11v1h-11z"/><path class="px-tone" d="M37 42h9v1h-9zM37 44h9v1h-9zM37 45h1v1h-1zM40 45h6v1h-6zM37 46h1v1h-1zM40 46h2v1h-2zM45 46h1v1h-1z"/><path class="px-device" d="M37 43h9v1h-9z"/><path class="px-gold" d="M38 45h2v1h-2zM38 46h2v1h-2z"/><path class="px-metal" d="M42 46h3v1h-3z"/>
+              <g class="px-hero"><path class="px-ink" d="M10 23h9v1h-9zM9 24h1v1h-1zM19 24h1v1h-1zM8 25h1v1h-1zM20 25h1v1h-1zM8 26h1v1h-1zM19 26h1v1h-1zM8 27h1v1h-1zM19 27h1v1h-1zM7 28h1v1h-1zM20 28h1v1h-1zM7 29h1v1h-1zM11 29h1v1h-1zM16 29h1v1h-1zM20 29h1v1h-1zM8 30h1v1h-1zM19 30h1v1h-1zM8 31h1v1h-1zM19 31h1v1h-1zM8 32h1v1h-1zM19 32h1v1h-1zM8 33h1v1h-1zM19 33h1v1h-1zM9 34h1v1h-1zM18 34h1v1h-1zM10 35h1v1h-1zM17 35h1v1h-1zM12 36h1v1h-1zM15 36h1v1h-1zM9 37h3v1h-3zM16 37h3v1h-3zM8 38h1v1h-1zM19 38h1v1h-1zM7 39h1v1h-1zM20 39h1v1h-1zM7 40h1v1h-1zM10 40h1v1h-1zM17 40h1v1h-1zM20 40h1v1h-1zM7 41h1v1h-1zM10 41h1v1h-1zM17 41h1v1h-1zM20 41h1v1h-1zM7 42h1v1h-1zM10 42h1v1h-1zM17 42h1v1h-1zM20 42h1v1h-1zM7 43h1v1h-1zM10 43h1v1h-1zM17 43h1v1h-1zM20 43h1v1h-1zM8 44h3v1h-3zM17 44h3v1h-3zM10 45h1v1h-1zM13 45h2v1h-2zM17 45h1v1h-1zM10 46h1v1h-1zM13 46h2v1h-2zM17 46h1v1h-1zM9 47h1v1h-1zM13 47h2v1h-2zM18 47h1v1h-1z"/><path class="px-hair" d="M10 24h7v1h-7zM18 24h1v1h-1zM9 25h8v1h-8zM19 25h1v1h-1zM9 26h10v1h-10z"/><path class="px-hair2" d="M17 24h1v1h-1zM17 25h2v1h-2z"/><path class="px-fade" d="M9 27h1v1h-1zM18 27h1v1h-1zM8 28h1v1h-1zM19 28h1v1h-1z"/><path class="px-skin" d="M10 27h8v1h-8zM9 28h1v1h-1zM12 28h4v1h-4zM18 28h1v1h-1zM8 29h1v1h-1zM10 29h1v1h-1zM17 29h1v1h-1zM19 29h1v1h-1zM10 30h2v1h-2zM13 30h2v1h-2zM16 30h2v1h-2zM9 31h1v1h-1zM12 31h1v1h-1zM14 31h2v1h-2zM18 31h1v1h-1zM9 32h2v1h-2zM17 32h2v1h-2zM10 33h2v1h-2zM16 33h2v1h-2zM11 34h2v1h-2zM15 34h2v1h-2zM13 36h2v1h-2zM8 43h2v1h-2zM18 43h2v1h-2z"/><path class="px-glasses" d="M10 28h2v1h-2zM16 28h2v1h-2zM9 29h1v1h-1zM12 29h4v1h-4zM18 29h1v1h-1zM9 30h1v1h-1zM12 30h1v1h-1zM15 30h1v1h-1zM18 30h1v1h-1zM10 31h2v1h-2zM16 31h2v1h-2z"/><path class="px-skin2" d="M13 31h1v1h-1z"/><path class="px-beard" d="M11 32h6v1h-6zM9 33h1v1h-1zM18 33h1v1h-1zM10 34h1v1h-1zM13 34h2v1h-2zM17 34h1v1h-1zM11 35h6v1h-6z"/><path class="px-lips" d="M12 33h4v1h-4z"/><path class="px-tone" d="M12 37h4v1h-4zM9 38h10v1h-10zM8 39h12v1h-12zM8 40h2v1h-2zM11 40h6v1h-6zM18 40h2v1h-2zM8 41h2v1h-2zM11 41h6v1h-6zM18 41h2v1h-2zM11 42h6v1h-6z"/><path class="px-tone2" d="M8 42h2v1h-2zM18 42h2v1h-2zM11 43h6v1h-6z"/><path class="px-pants" d="M11 44h6v1h-6zM11 45h2v1h-2zM15 45h2v1h-2zM11 46h2v1h-2zM15 46h2v1h-2z"/><path class="px-shoe" d="M10 47h3v1h-3zM15 47h3v1h-3z"/></g>
+            </g>
+            <g data-career-layer="itau" class="sprite-frame sprite-frame--itau">
+              <g class="px-float"><path class="px-itau" d="M4 4h13v1h-13zM3 5h15v1h-15zM3 6h15v1h-15zM3 7h15v1h-15zM3 8h1v1h-1zM5 8h11v1h-11zM17 8h1v1h-1zM3 9h4v1h-4zM8 9h7v1h-7zM16 9h2v1h-2zM3 10h1v1h-1zM5 10h1v1h-1zM9 10h2v1h-2zM13 10h1v1h-1zM15 10h1v1h-1zM17 10h1v1h-1zM3 11h1v1h-1zM5 11h2v1h-2zM8 11h2v1h-2zM11 11h1v1h-1zM13 11h1v1h-1zM15 11h1v1h-1zM17 11h1v1h-1zM3 12h1v1h-1zM5 12h2v1h-2zM8 12h2v1h-2zM11 12h1v1h-1zM13 12h1v1h-1zM15 12h1v1h-1zM17 12h1v1h-1zM3 13h1v1h-1zM5 13h2v1h-2zM9 13h2v1h-2zM13 13h2v1h-2zM17 13h1v1h-1zM3 14h15v1h-15zM3 15h15v1h-15zM4 16h13v1h-13z"/><path class="px-white" d="M4 8h1v1h-1zM16 8h1v1h-1zM7 9h1v1h-1zM15 9h1v1h-1zM4 10h1v1h-1zM6 10h3v1h-3zM11 10h2v1h-2zM14 10h1v1h-1zM16 10h1v1h-1zM4 11h1v1h-1zM7 11h1v1h-1zM10 11h1v1h-1zM12 11h1v1h-1zM14 11h1v1h-1zM16 11h1v1h-1zM4 12h1v1h-1zM7 12h1v1h-1zM10 12h1v1h-1zM12 12h1v1h-1zM14 12h1v1h-1zM16 12h1v1h-1zM4 13h1v1h-1zM7 13h2v1h-2zM11 13h2v1h-2zM15 13h2v1h-2z"/></g>
+              <path class="px-ink" d="M34 3h3v1h-3zM32 4h2v1h-2zM37 4h2v1h-2zM30 5h2v1h-2zM39 5h2v1h-2zM28 6h2v1h-2zM41 6h2v1h-2zM26 7h2v1h-2zM43 7h2v1h-2zM25 8h21v1h-21zM25 9h1v1h-1zM45 9h1v1h-1zM25 10h21v1h-21zM26 11h1v1h-1zM28 11h1v1h-1zM30 11h1v1h-1zM32 11h1v1h-1zM34 11h1v1h-1zM36 11h1v1h-1zM38 11h1v1h-1zM40 11h1v1h-1zM42 11h1v1h-1zM44 11h1v1h-1zM26 12h1v1h-1zM28 12h1v1h-1zM30 12h1v1h-1zM32 12h1v1h-1zM34 12h1v1h-1zM36 12h1v1h-1zM38 12h1v1h-1zM40 12h1v1h-1zM42 12h1v1h-1zM44 12h1v1h-1zM26 13h1v1h-1zM28 13h1v1h-1zM30 13h1v1h-1zM32 13h1v1h-1zM34 13h1v1h-1zM36 13h1v1h-1zM38 13h1v1h-1zM40 13h1v1h-1zM42 13h1v1h-1zM44 13h1v1h-1zM26 14h1v1h-1zM28 14h1v1h-1zM30 14h1v1h-1zM32 14h1v1h-1zM34 14h1v1h-1zM36 14h1v1h-1zM38 14h1v1h-1zM40 14h1v1h-1zM42 14h1v1h-1zM44 14h1v1h-1zM26 15h1v1h-1zM28 15h1v1h-1zM30 15h1v1h-1zM32 15h1v1h-1zM34 15h1v1h-1zM36 15h1v1h-1zM38 15h1v1h-1zM40 15h1v1h-1zM42 15h1v1h-1zM44 15h1v1h-1zM26 16h1v1h-1zM28 16h1v1h-1zM30 16h1v1h-1zM32 16h1v1h-1zM34 16h1v1h-1zM36 16h1v1h-1zM38 16h1v1h-1zM40 16h1v1h-1zM42 16h1v1h-1zM44 16h1v1h-1zM25 17h21v1h-21zM25 18h1v1h-1zM45 18h1v1h-1zM25 19h21v1h-21z"/><path class="px-tone" d="M34 4h3v1h-3zM32 5h7v1h-7zM30 6h5v1h-5zM36 6h5v1h-5zM28 7h15v1h-15z"/><path class="px-tone3" d="M35 6h1v1h-1z"/><path class="px-white" d="M26 9h19v1h-19zM27 11h1v1h-1zM31 11h1v1h-1zM35 11h1v1h-1zM39 11h1v1h-1zM43 11h1v1h-1zM27 12h1v1h-1zM31 12h1v1h-1zM35 12h1v1h-1zM39 12h1v1h-1zM43 12h1v1h-1zM27 13h1v1h-1zM31 13h1v1h-1zM35 13h1v1h-1zM39 13h1v1h-1zM43 13h1v1h-1zM27 14h1v1h-1zM31 14h1v1h-1zM35 14h1v1h-1zM39 14h1v1h-1zM43 14h1v1h-1zM27 15h1v1h-1zM31 15h1v1h-1zM35 15h1v1h-1zM39 15h1v1h-1zM43 15h1v1h-1zM27 16h1v1h-1zM31 16h1v1h-1zM35 16h1v1h-1zM39 16h1v1h-1zM43 16h1v1h-1z"/><path class="px-device" d="M29 11h1v1h-1zM33 11h1v1h-1zM37 11h1v1h-1zM41 11h1v1h-1zM29 12h1v1h-1zM33 12h1v1h-1zM37 12h1v1h-1zM41 12h1v1h-1zM29 13h1v1h-1zM33 13h1v1h-1zM37 13h1v1h-1zM41 13h1v1h-1zM29 14h1v1h-1zM33 14h1v1h-1zM37 14h1v1h-1zM41 14h1v1h-1zM29 15h1v1h-1zM33 15h1v1h-1zM37 15h1v1h-1zM41 15h1v1h-1zM29 16h1v1h-1zM33 16h1v1h-1zM37 16h1v1h-1zM41 16h1v1h-1z"/><path class="px-metal" d="M26 18h19v1h-19z"/>
+              <path class="px-ink" d="M24 22h22v1h-22zM24 23h1v1h-1zM27 23h1v1h-1zM30 23h1v1h-1zM33 23h1v1h-1zM36 23h1v1h-1zM39 23h1v1h-1zM42 23h1v1h-1zM45 23h1v1h-1zM24 24h1v1h-1zM27 24h1v1h-1zM30 24h1v1h-1zM33 24h1v1h-1zM36 24h1v1h-1zM39 24h1v1h-1zM42 24h1v1h-1zM45 24h1v1h-1zM24 25h22v1h-22z"/><path class="px-tone3" d="M25 23h2v1h-2zM28 23h2v1h-2zM31 23h2v1h-2zM34 23h2v1h-2zM37 23h2v1h-2zM25 24h2v1h-2zM28 24h2v1h-2zM31 24h2v1h-2zM34 24h2v1h-2zM37 24h2v1h-2z"/><path class="px-screen" d="M40 23h2v1h-2zM43 23h2v1h-2zM40 24h2v1h-2zM43 24h2v1h-2z"/>
+              <g class="px-blink-a"><path class="px-spark" d="M40 23h2v1h-2zM40 24h2v1h-2z"/></g>
+              <path class="px-ink" d="M22 43h5v1h-5zM22 44h1v1h-1zM26 44h3v1h-3zM22 45h1v1h-1zM26 45h1v1h-1zM28 45h1v1h-1zM22 46h1v1h-1zM26 46h3v1h-3zM23 47h3v1h-3z"/><path class="px-white" d="M23 44h3v1h-3z"/><path class="px-tone" d="M23 45h3v1h-3z"/><path class="px-tone2" d="M23 46h3v1h-3z"/>
+              <g class="px-blink-b"><path class="px-spark" d="M23 40h1v1h-1zM27 40h1v1h-1zM24 41h1v1h-1zM26 41h1v1h-1z"/></g>
+              <path class="px-ink" d="M30 41h11v1h-11zM30 42h1v1h-1zM40 42h1v1h-1zM30 43h1v1h-1zM40 43h1v1h-1zM30 44h1v1h-1zM40 44h1v1h-1zM30 45h1v1h-1zM40 45h1v1h-1zM30 46h1v1h-1zM40 46h1v1h-1zM30 47h11v1h-11z"/><path class="px-tone" d="M31 42h9v1h-9zM31 44h9v1h-9zM31 45h1v1h-1zM34 45h6v1h-6zM31 46h1v1h-1zM34 46h2v1h-2zM39 46h1v1h-1z"/><path class="px-device" d="M31 43h9v1h-9z"/><path class="px-gold" d="M32 45h2v1h-2zM32 46h2v1h-2z"/><path class="px-metal" d="M36 46h3v1h-3z"/>
+              <g class="px-float"><path class="px-ink" d="M39 34h5v1h-5zM38 35h1v1h-1zM44 35h1v1h-1zM37 36h1v1h-1zM45 36h1v1h-1zM37 37h1v1h-1zM45 37h1v1h-1zM37 38h1v1h-1zM45 38h1v1h-1zM37 39h1v1h-1zM45 39h1v1h-1zM38 40h1v1h-1zM44 40h1v1h-1zM39 41h5v1h-5z"/><path class="px-screen" d="M39 35h5v1h-5zM38 36h3v1h-3zM42 36h3v1h-3zM38 37h3v1h-3zM42 37h3v1h-3zM38 38h7v1h-7zM38 39h3v1h-3zM42 39h3v1h-3zM39 40h5v1h-5z"/><path class="px-red" d="M41 36h1v1h-1zM41 37h1v1h-1zM41 39h1v1h-1z"/><path class="px-metal" d="M44 41h2v1h-2zM44 42h3v1h-3zM45 43h2v1h-2z"/></g>
+              <g class="px-hero"><path class="px-ink" d="M10 23h9v1h-9zM9 24h1v1h-1zM19 24h1v1h-1zM8 25h1v1h-1zM20 25h1v1h-1zM8 26h1v1h-1zM19 26h1v1h-1zM8 27h1v1h-1zM19 27h1v1h-1zM7 28h1v1h-1zM20 28h1v1h-1zM7 29h1v1h-1zM11 29h1v1h-1zM16 29h1v1h-1zM20 29h1v1h-1zM8 30h1v1h-1zM19 30h1v1h-1zM8 31h1v1h-1zM19 31h1v1h-1zM8 32h1v1h-1zM19 32h1v1h-1zM8 33h1v1h-1zM19 33h1v1h-1zM9 34h1v1h-1zM18 34h1v1h-1zM10 35h2v1h-2zM16 35h2v1h-2zM12 36h1v1h-1zM15 36h1v1h-1zM9 37h3v1h-3zM16 37h3v1h-3zM8 38h1v1h-1zM19 38h1v1h-1zM7 39h1v1h-1zM20 39h1v1h-1zM7 40h1v1h-1zM10 40h1v1h-1zM17 40h1v1h-1zM20 40h1v1h-1zM7 41h1v1h-1zM10 41h1v1h-1zM17 41h1v1h-1zM20 41h1v1h-1zM7 42h1v1h-1zM10 42h1v1h-1zM17 42h1v1h-1zM20 42h1v1h-1zM7 43h1v1h-1zM10 43h1v1h-1zM17 43h1v1h-1zM20 43h1v1h-1zM8 44h3v1h-3zM17 44h3v1h-3zM10 45h1v1h-1zM13 45h2v1h-2zM17 45h1v1h-1zM10 46h1v1h-1zM13 46h2v1h-2zM17 46h1v1h-1zM9 47h1v1h-1zM13 47h2v1h-2zM18 47h1v1h-1z"/><path class="px-hair" d="M10 24h7v1h-7zM18 24h1v1h-1zM9 25h8v1h-8zM19 25h1v1h-1zM9 26h10v1h-10z"/><path class="px-hair2" d="M17 24h1v1h-1zM17 25h2v1h-2z"/><path class="px-fade" d="M9 27h1v1h-1zM18 27h1v1h-1zM8 28h1v1h-1zM19 28h1v1h-1z"/><path class="px-skin" d="M10 27h8v1h-8zM9 28h1v1h-1zM12 28h4v1h-4zM18 28h1v1h-1zM8 29h1v1h-1zM10 29h1v1h-1zM17 29h1v1h-1zM19 29h1v1h-1zM10 30h2v1h-2zM13 30h2v1h-2zM16 30h2v1h-2zM9 31h1v1h-1zM12 31h1v1h-1zM14 31h2v1h-2zM18 31h1v1h-1zM9 32h2v1h-2zM17 32h2v1h-2zM9 33h3v1h-3zM16 33h3v1h-3zM10 34h3v1h-3zM15 34h3v1h-3zM12 35h4v1h-4zM13 36h2v1h-2zM8 43h2v1h-2zM18 43h2v1h-2z"/><path class="px-glasses" d="M10 28h2v1h-2zM16 28h2v1h-2zM9 29h1v1h-1zM12 29h4v1h-4zM18 29h1v1h-1zM9 30h1v1h-1zM12 30h1v1h-1zM15 30h1v1h-1zM18 30h1v1h-1zM10 31h2v1h-2zM16 31h2v1h-2z"/><path class="px-skin2" d="M13 31h1v1h-1z"/><path class="px-stubble" d="M11 32h6v1h-6zM13 34h2v1h-2z"/><path class="px-lips" d="M12 33h4v1h-4z"/><path class="px-white" d="M12 37h1v1h-1zM15 37h1v1h-1z"/><path class="px-tone" d="M13 37h2v1h-2zM9 38h10v1h-10zM8 39h12v1h-12zM8 40h2v1h-2zM11 40h4v1h-4zM16 40h1v1h-1zM18 40h2v1h-2zM8 41h2v1h-2zM11 41h6v1h-6zM18 41h2v1h-2zM11 42h6v1h-6z"/><path class="px-gold" d="M15 40h1v1h-1z"/><path class="px-tone2" d="M8 42h2v1h-2zM18 42h2v1h-2zM11 43h6v1h-6z"/><path class="px-pants" d="M11 44h6v1h-6zM11 45h2v1h-2zM15 45h2v1h-2zM11 46h2v1h-2zM15 46h2v1h-2z"/><path class="px-shoe" d="M10 47h3v1h-3zM15 47h3v1h-3z"/></g>
+            </g>
+            <g data-career-layer="support" class="sprite-frame sprite-frame--support">
+              <path class="px-ink" d="M31 21h14v1h-14zM31 22h1v1h-1zM44 22h1v1h-1zM31 23h1v1h-1zM33 23h10v1h-10zM44 23h1v1h-1zM31 24h1v1h-1zM33 24h1v1h-1zM42 24h1v1h-1zM44 24h1v1h-1zM31 25h1v1h-1zM33 25h1v1h-1zM42 25h1v1h-1zM44 25h1v1h-1zM31 26h1v1h-1zM33 26h1v1h-1zM42 26h1v1h-1zM44 26h1v1h-1zM31 27h1v1h-1zM33 27h1v1h-1zM42 27h1v1h-1zM44 27h1v1h-1zM31 28h1v1h-1zM33 28h1v1h-1zM42 28h1v1h-1zM44 28h1v1h-1zM31 29h1v1h-1zM33 29h10v1h-10zM44 29h1v1h-1zM31 30h1v1h-1zM44 30h1v1h-1zM32 31h4v1h-4zM40 31h4v1h-4zM35 32h6v1h-6z"/><path class="px-metal" d="M32 22h12v1h-12zM32 23h1v1h-1zM43 23h1v1h-1zM32 24h1v1h-1zM43 24h1v1h-1zM32 25h1v1h-1zM43 25h1v1h-1zM32 26h1v1h-1zM43 26h1v1h-1zM32 27h1v1h-1zM43 27h1v1h-1zM32 28h1v1h-1zM43 28h1v1h-1zM32 29h1v1h-1zM43 29h1v1h-1zM32 30h12v1h-12zM36 31h4v1h-4z"/><path class="px-screen" d="M34 24h8v1h-8zM34 25h1v1h-1zM36 25h6v1h-6zM34 26h2v1h-2zM37 26h5v1h-5zM34 27h1v1h-1zM36 27h6v1h-6zM34 28h8v1h-8z"/><path class="px-glow" d="M35 25h1v1h-1zM36 26h1v1h-1zM35 27h1v1h-1z"/>
+              <g class="px-cursor"><path class="px-spark" d="M38 27h2v1h-2z"/></g>
+              <path class="px-ink" d="M32 33h11v1h-11zM32 34h1v1h-1zM42 34h1v1h-1zM32 35h1v1h-1zM34 35h7v1h-7zM42 35h1v1h-1zM32 36h1v1h-1zM34 36h1v1h-1zM37 36h1v1h-1zM40 36h1v1h-1zM42 36h1v1h-1zM32 37h1v1h-1zM34 37h1v1h-1zM37 37h1v1h-1zM40 37h1v1h-1zM42 37h1v1h-1zM32 38h1v1h-1zM34 38h7v1h-7zM42 38h1v1h-1zM32 39h1v1h-1zM34 39h1v1h-1zM40 39h1v1h-1zM42 39h1v1h-1zM32 40h1v1h-1zM34 40h1v1h-1zM40 40h1v1h-1zM42 40h1v1h-1zM32 41h1v1h-1zM34 41h1v1h-1zM40 41h1v1h-1zM42 41h1v1h-1zM32 42h1v1h-1zM34 42h7v1h-7zM42 42h1v1h-1zM32 43h1v1h-1zM34 43h1v1h-1zM40 43h1v1h-1zM42 43h1v1h-1zM32 44h1v1h-1zM34 44h7v1h-7zM42 44h1v1h-1zM32 45h1v1h-1zM42 45h1v1h-1zM32 46h1v1h-1zM42 46h1v1h-1zM32 47h11v1h-11z"/><path class="px-metal" d="M33 34h9v1h-9zM33 35h1v1h-1zM41 35h1v1h-1zM33 36h1v1h-1zM41 36h1v1h-1zM33 37h1v1h-1zM41 37h1v1h-1zM33 38h1v1h-1zM41 38h1v1h-1zM33 39h1v1h-1zM41 39h1v1h-1zM33 40h1v1h-1zM41 40h1v1h-1zM33 41h1v1h-1zM41 41h1v1h-1zM33 42h1v1h-1zM41 42h1v1h-1zM33 43h1v1h-1zM41 43h1v1h-1zM33 44h1v1h-1zM41 44h1v1h-1zM33 45h9v1h-9zM33 46h1v1h-1zM35 46h7v1h-7z"/><path class="px-green" d="M35 36h2v1h-2zM35 37h2v1h-2z"/><path class="px-red" d="M38 36h2v1h-2zM38 37h2v1h-2z"/><path class="px-gold" d="M35 39h5v1h-5zM35 40h1v1h-1zM37 40h1v1h-1zM39 40h1v1h-1zM35 41h5v1h-5z"/><path class="px-metal2" d="M36 40h1v1h-1zM38 40h1v1h-1zM34 46h1v1h-1z"/><path class="px-glow" d="M35 43h5v1h-5z"/>
+              <path class="px-ink" d="M44 34h3v1h-3zM44 35h1v1h-1zM46 35h1v1h-1zM44 36h1v1h-1zM46 36h1v1h-1zM44 37h1v1h-1zM46 37h1v1h-1zM44 38h1v1h-1zM46 38h1v1h-1zM44 39h1v1h-1zM46 39h1v1h-1zM44 40h1v1h-1zM46 40h1v1h-1zM44 41h1v1h-1zM46 41h1v1h-1zM44 42h1v1h-1zM46 42h1v1h-1zM44 43h1v1h-1zM46 43h1v1h-1zM44 44h1v1h-1zM46 44h1v1h-1zM44 45h1v1h-1zM46 45h1v1h-1zM44 46h1v1h-1zM46 46h1v1h-1zM44 47h3v1h-3z"/><path class="px-metal" d="M45 35h1v1h-1zM45 36h1v1h-1zM45 37h1v1h-1zM45 38h1v1h-1zM45 39h1v1h-1zM45 40h1v1h-1zM45 41h1v1h-1zM45 42h1v1h-1zM45 43h1v1h-1zM45 44h1v1h-1zM45 45h1v1h-1zM45 46h1v1h-1z"/>
+              <path class="px-ink" d="M18 37h1v1h-1zM20 37h1v1h-1zM22 37h1v1h-1zM18 38h1v1h-1zM22 38h1v1h-1zM19 39h1v1h-1zM21 39h1v1h-1zM19 40h1v1h-1zM21 40h1v1h-1zM19 41h1v1h-1zM21 41h1v1h-1zM19 42h1v1h-1zM21 42h1v1h-1zM19 43h1v1h-1zM21 43h1v1h-1zM20 44h1v1h-1z"/><path class="px-metal" d="M19 37h1v1h-1zM21 37h1v1h-1zM19 38h3v1h-3zM20 39h1v1h-1zM20 40h1v1h-1zM20 41h1v1h-1zM20 42h1v1h-1zM20 43h1v1h-1z"/>
+              <g class="px-hero"><path class="px-ink" d="M10 25h9v1h-9zM9 26h1v1h-1zM19 26h1v1h-1zM8 27h1v1h-1zM20 27h1v1h-1zM8 28h1v1h-1zM19 28h1v1h-1zM8 29h1v1h-1zM19 29h1v1h-1zM7 30h1v1h-1zM20 30h1v1h-1zM7 31h1v1h-1zM11 31h1v1h-1zM16 31h1v1h-1zM20 31h1v1h-1zM8 32h1v1h-1zM19 32h1v1h-1zM8 33h1v1h-1zM19 33h1v1h-1zM8 34h1v1h-1zM19 34h1v1h-1zM8 35h1v1h-1zM19 35h1v1h-1zM9 36h1v1h-1zM18 36h1v1h-1zM10 37h2v1h-2zM16 37h2v1h-2zM12 38h1v1h-1zM15 38h1v1h-1zM9 39h3v1h-3zM16 39h3v1h-3zM8 40h1v1h-1zM19 40h1v1h-1zM7 41h1v1h-1zM20 41h1v1h-1zM7 42h1v1h-1zM10 42h1v1h-1zM17 42h1v1h-1zM20 42h1v1h-1zM7 43h1v1h-1zM10 43h1v1h-1zM17 43h1v1h-1zM20 43h1v1h-1zM7 44h1v1h-1zM10 44h1v1h-1zM17 44h1v1h-1zM20 44h1v1h-1zM8 45h3v1h-3zM17 45h3v1h-3zM10 46h1v1h-1zM13 46h2v1h-2zM17 46h1v1h-1zM9 47h1v1h-1zM13 47h2v1h-2zM18 47h1v1h-1z"/><path class="px-hair" d="M10 26h7v1h-7zM18 26h1v1h-1zM9 27h8v1h-8zM19 27h1v1h-1zM9 28h10v1h-10z"/><path class="px-hair2" d="M17 26h1v1h-1zM17 27h2v1h-2z"/><path class="px-fade" d="M9 29h1v1h-1zM18 29h1v1h-1zM8 30h1v1h-1zM19 30h1v1h-1z"/><path class="px-skin" d="M10 29h8v1h-8zM9 30h1v1h-1zM12 30h4v1h-4zM18 30h1v1h-1zM8 31h1v1h-1zM10 31h1v1h-1zM17 31h1v1h-1zM19 31h1v1h-1zM10 32h2v1h-2zM13 32h2v1h-2zM16 32h2v1h-2zM9 33h1v1h-1zM12 33h1v1h-1zM14 33h2v1h-2zM18 33h1v1h-1zM9 34h10v1h-10zM9 35h3v1h-3zM16 35h3v1h-3zM10 36h8v1h-8zM12 37h4v1h-4zM13 38h2v1h-2zM8 44h2v1h-2zM18 44h2v1h-2z"/><path class="px-glasses" d="M10 30h2v1h-2zM16 30h2v1h-2zM9 31h1v1h-1zM12 31h4v1h-4zM18 31h1v1h-1zM9 32h1v1h-1zM12 32h1v1h-1zM15 32h1v1h-1zM18 32h1v1h-1zM10 33h2v1h-2zM16 33h2v1h-2z"/><path class="px-skin2" d="M13 33h1v1h-1z"/><path class="px-lips" d="M12 35h4v1h-4z"/><path class="px-tone" d="M12 39h4v1h-4zM9 40h10v1h-10zM8 41h12v1h-12zM8 42h2v1h-2zM11 42h6v1h-6zM18 42h2v1h-2zM11 43h6v1h-6z"/><path class="px-tone2" d="M8 43h2v1h-2zM18 43h2v1h-2zM11 44h6v1h-6z"/><path class="px-pants" d="M11 45h6v1h-6zM11 46h2v1h-2zM15 46h2v1h-2z"/><path class="px-shoe" d="M10 47h3v1h-3zM15 47h3v1h-3z"/></g>
+            </g>
+            <g class="sprite-rewind" data-career-rewind><path d="M0 8h48v1h-48zM0 19h48v1h-48zM0 30h48v1h-48zM0 41h48v1h-48z"/></g>
+          </svg>
+        </div>
+        <div class="career-stage__meta">
+          <span class="career-stage__index mono" data-career-index>01 / 04</span>
+          <p class="career-stage__state mono" data-career-state>profissional completo</p>
+          <p class="career-stage__detail" data-career-detail>IA, agentes e produtos</p>
+        </div>
+        <div class="career-stage__meter" data-career-meter>
+          <i class="is-active"></i><i></i><i></i><i></i>
+        </div>
+        <p class="career-stage__hint mono">role para voltar no tempo <span aria-hidden="true">↓</span></p>
+      </aside>
+      <div class="journey__wrap">
+        <svg class="journey__line" aria-hidden="true" preserveAspectRatio="none"><path data-journey-path /></svg>
+        <ol class="journey__list">
+          <li class="jr jr--now" id="job-cadastra" style="--c: var(--ember-400)">
+            <p class="jr__when">out 2025 → hoje<small>1 ano</small></p>
+            <div class="jr__body">
+              <h3 class="jr__title">Cadastra<small>Desenvolvedor Full Stack Pleno</small></h3>
+              <p class="jr__text">Desenvolvo a <strong>AstraOS</strong>, a plataforma de IA generativa da empresa, no time que constrói as integrações e os agentes. Sou responsável pela arquitetura e implementação de <strong>servidores MCP</strong> que conectam modelos generativos a dados corporativos em tempo real, além de soluções de <strong>RAG</strong>, APIs REST e autenticação para aplicações de alta demanda. Também atuei no sistema de reservas de escritórios.</p>
+              <ul class="jr__wins">
+                <li>Agentes que consultam dados de marketing e devolvem entregáveis prontos: dashboards, apresentações, documentos e planilhas.</li>
+                <li>Integrações tipadas e validadas com plataformas de mídia, analytics, CRM e produtividade.</li>
+                <li>Autenticação com JWT, OAuth2 e Google, com permissões respeitadas por usuário.</li>
+              </ul>
+              <p class="jr__stack mono">Node.js, TypeScript, Python, AdonisJS, Fastify, Express, React, Svelte, Vue.js, PostgreSQL, Redis, AWS, GCP, Docker, MCP, RAG</p>
+            </div>
+          </li>
+
+          <li class="jr" id="job-seguros" style="--c: var(--sky-200)">
+            <p class="jr__when">jul 2024 → out 2025<small>1 ano e 4 meses</small></p>
+            <div class="jr__body">
+              <h3 class="jr__title">Mercadinho do Zé<small>Desenvolvedor Backend Pleno</small></h3>
+              <p class="jr__text">Desenvolvimento da <strong>plataforma de seguro de vida</strong> da empresa: integrações com APIs de parceiros, plataformas de pagamento e gestão de apólices. Projetei os fluxos assíncronos com filas de mensageria e gatilhos de eventos de negócio que garantem <strong>confiabilidade e rastreabilidade</strong> em operações financeiras críticas.</p>
+              <ul class="jr__wins">
+                <li>Arquitetura orientada a eventos com AWS Lambda, SQS e EventBridge, desacoplando serviços.</li>
+                <li>Webhooks de parceiros e meios de pagamento tratados de forma segura e auditável.</li>
+              </ul>
+              <p class="jr__stack mono">Node.js, TypeScript, AdonisJS, PostgreSQL, RDS, DynamoDB, Lambda, S3, SQS, EventBridge, OAuth2, Jenkins</p>
+            </div>
+          </li>
+
+          <li class="jr" id="job-tcs" style="--c: var(--sky-400)">
+            <p class="jr__when">dez 2020 → jul 2024<small>3 anos e 8 meses</small></p>
+            <div class="jr__body">
+              <h3 class="jr__title">Tata Consultancy Services<small>alocado no Itaú Unibanco</small></h3>
+              <p class="jr__text">De trainee a pleno, atuando em microsserviços de missão crítica do maior banco privado do país.</p>
+              <ol class="ladder">
+                <li><span class="ladder__step">Pleno</span><span class="ladder__when mono">abr → jul 2024</span><span class="ladder__what"><strong>Limite da Conta.</strong> Sustentação de microsserviços, automação de fluxos e gatilhos com AWS Lambda em Python e infraestrutura na AWS com Terraform.</span></li>
+                <li><span class="ladder__step">Júnior</span><span class="ladder__when mono">dez 2021 → jun 2024</span><span class="ladder__what"><strong>Antifraude, Pagamentos e Dados BACEN.</strong> Desenvolvimento e sustentação de microsserviços críticos, modernização de sistemas legados e robustez dos fluxos de dados regulatórios e financeiros.</span></li>
+                <li><span class="ladder__step">Trainee</span><span class="ladder__when mono">dez 2020 → nov 2021</span><span class="ladder__what">Formação em engenharia de software corporativa em Londrina, PR.</span></li>
+              </ol>
+              <p class="jr__stack mono">Java 8/11, Spring Boot, JPA, Hibernate, Python, Kafka, SQS, PostgreSQL, MongoDB, DynamoDB, EC2, Terraform, Docker, GitHub Actions, Arquitetura hexagonal, Grafana, Splunk, CloudWatch</p>
+            </div>
+          </li>
+
+          <li class="jr" style="--c: var(--ink-400)">
+            <p class="jr__when">2015 → 2020<small>a base</small></p>
+            <div class="jr__body">
+              <h3 class="jr__title">Suporte e infraestrutura de TI<small>Escolpi · Prefeitura de Ourinhos · TecBit</small></h3>
+              <p class="jr__text">Especialista em suporte de TI na Escolpi Informática (2019 a 2020), suporte técnico na Prefeitura Municipal de Ourinhos (2018 a 2019) e na TecBit (2015). Anos resolvendo problemas reais de usuários, redes e máquinas antes de escrever o primeiro microsserviço: é daí que vem o meu cuidado com a operação e com quem usa o sistema.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+
+      </div>
+      <div class="creds">
+        <div class="creds__item reveal">
+          <p class="eyebrow">Formação</p>
+          <h3>FATEC Ourinhos</h3>
+          <p class="dim">Ensino superior em Engenharia de Software, 2016 a 2019</p>
+        </div>
+        <div class="creds__item reveal">
+          <p class="eyebrow">Certificações</p>
+          <ul>
+            <li><strong>AWS Certified Cloud Practitioner</strong>, 2022</li>
+            <li>Spring Framework 5 e Spring Boot 2</li>
+            <li>Arquitetura Hexagonal (Ports and Adapters)</li>
+            <li>Angular 10 com Spring Boot 2</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== IA ============================== -->
+    <section id="ia" class="ai" data-tone="ember" data-chapter="IA">
+      <div class="container ai__grid">
+        <div class="ai__copy">
+          <p class="eyebrow"><span class="eyebrow__num">03</span> Inteligência artificial</p>
+          <h2 class="section-title split">IA generativa em <em>produção</em>.</h2>
+          <p class="lead reveal">A <strong>AstraOS</strong> é a plataforma de IA generativa da <strong>Cadastra</strong>. Ela reúne, numa única interface de conversa, agentes inteligentes que consultam dados de marketing, analisam campanhas e produzem entregáveis prontos: dashboards, apresentações, documentos e planilhas.</p>
+
+          <ul class="ai__points">
+            <li class="reveal"><span class="ai__k">Meu papel</span><span>Desenvolvedor no time que constrói as integrações e os agentes da plataforma, incluindo os servidores MCP que dão aos modelos acesso controlado a dados corporativos.</span></li>
+            <li class="reveal"><span class="ai__k">Arquitetura</span><span>Um orquestrador entende o pedido, divide o trabalho entre agentes especialistas (mídia, dados, dashboards, apresentações, redação, briefing) e junta tudo numa resposta só.</span></li>
+            <li class="reveal"><span class="ai__k">Impacto</span><span>Da pergunta ao entregável em minutos. Menos tempo coletando e formatando dados, mais tempo analisando e decidindo.</span></li>
+          </ul>
+        </div>
+
+        <!-- Demonstração interativa: o mesmo pedido em três níveis de confiança -->
+        <div class="agent reveal" data-agent-demo>
+          <div class="agent__chrome">
+            <span class="agent__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span class="mono">orquestração · demonstração</span>
+            <button type="button" class="agent__replay" data-agent-replay aria-label="Rodar de novo">↻</button>
+          </div>
+
+          <div class="trust" role="radiogroup" aria-label="Nível de confiança no agente">
+            <button type="button" role="radio" aria-checked="true" data-trust="1"><b>1</b> Transparente</button>
+            <button type="button" role="radio" aria-checked="false" data-trust="2"><b>2</b> Seletivo</button>
+            <button type="button" role="radio" aria-checked="false" data-trust="3"><b>3</b> Autônomo</button>
+          </div>
+          <p class="trust__hint" data-trust-hint>Mostra cada passo, o raciocínio e pede aprovação antes de qualquer ação com efeito real.</p>
+
+          <div class="agent__prompt">
+            <span class="agent__avatar" aria-hidden="true">você</span>
+            <p>Monte o relatório semanal das campanhas de mídia e envie para o cliente.</p>
+          </div>
+          <ol class="agent__steps" data-agent-steps aria-live="polite"></ol>
+          <div class="agent__result" data-agent-result hidden></div>
+          <p class="agent__note">Ilustração conceitual de padrões de UX para agentes. Não é uma tela da AstraOS.</p>
+        </div>
+      </div>
+
+      <div class="container">
+        <ul class="caps">
+          <li class="reveal"><h3>Orquestração multiagente</h3><p>Um agente principal delega para subagentes especialistas, com delegação em cadeia e retomada de sessão.</p></li>
+          <li class="reveal"><h3>Uso de ferramentas</h3><p>Os agentes chamam APIs reais de dezenas de plataformas, com respostas tipadas e validadas.</p></li>
+          <li class="reveal"><h3>Roteamento de modelos</h3><p>Cada etapa vai para o modelo mais adequado, equilibrando qualidade, velocidade e custo, com cache de contexto.</p></li>
+          <li class="reveal"><h3>Skills sob demanda</h3><p>Conhecimento especializado é carregado só quando necessário, sem inflar cada conversa.</p></li>
+          <li class="reveal"><h3>Segurança e governança</h3><p>Acesso por grupos com bloqueio por padrão, nenhum segredo no código e permissões respeitadas por usuário.</p></li>
+          <li class="reveal"><h3>Geração de artefatos</h3><p>HTML interativo, PPTX editável, documentos e planilhas criados e editados programaticamente.</p></li>
+          <li class="reveal"><h3>Engenharia por especificação</h3><p>Spec, design e tarefas antes do código, decisões registradas e testes automatizados.</p></li>
+          <li class="reveal caps__legal"><p>AstraOS é um produto e uma marca da Cadastra. Aqui descrevo capacidades da plataforma e o meu papel no time.</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============================== PROJETOS ============================== -->
+    <section id="projetos" class="projects-intro container" data-tone="lime" data-chapter="projetos">
+      <p class="eyebrow"><span class="eyebrow__num">04</span> Projetos próprios</p>
+      <h2 class="section-title section-title--xl split">Três produtos.<br />Do banco de dados <em>ao pixel</em>.</h2>
+      <p class="lead reveal">Sistemas que eu concebi, desenhei e desenvolvi sozinho, cada um resolvendo a operação de um setor diferente. Uma amostra do que fazem, sem abrir o código. Repare que a página muda de cor com cada projeto.</p>
+      <nav class="project-index reveal" aria-label="Projetos">
+        <a href="#ordenahub" style="--tone: var(--violet-400)"><span>01</span>OrdenaHub<small>ERP SaaS multiempresa com emissão fiscal</small></a>
+        <a href="#vetnix" style="--tone: var(--mint-400)"><span>02</span>Vetnix<small>Gestão veterinária e carteira digital do pet</small></a>
+        <a href="#mixawards" style="--tone: var(--gold-400)"><span>03</span>Mix Awards<small>Plataforma gamer com dados da GamersClub</small></a>
+      </nav>
+    </section>
+
+    <!-- OrdenaHub -->
+    <article id="ordenahub" class="case" data-tone="violet" data-chapter="OrdenaHub">
+      <div class="container case__grid">
+        <div class="case__info">
+          <h3 class="case__title split">OrdenaHub</h3>
+          <p class="case__pitch reveal">ERP & SaaS em nuvem que se adapta ao ramo de cada empresa.</p>
+          <p class="case__text reveal">Nasceu para assistências técnicas controlarem ordens de serviço e virou uma plataforma de gestão completa: orçamentos, vendas, compras, estoque, financeiro e emissão de notas fiscais no mesmo lugar. Todas as empresas entram pelo mesmo endereço e o login leva cada uma para o seu ambiente, com a própria marca, e enxerga só os módulos do seu ramo.</p>
+
+          <ul class="case__list reveal" data-lens-only="rec cli">
+            <li><b>Ciclo comercial completo.</b> Orçamento aprovado vira venda, venda confirmada gera contas a receber e o faturamento emite a nota.</li>
+            <li><b>Fiscal integrado.</b> NF-e, NFC-e com contingência e NFS-e, com prévia da DANFE antes de emitir.</li>
+            <li><b>Financeiro de verdade.</b> Contas a pagar e a receber com baixas parciais, conciliação de extrato bancário, DRE, fluxo de caixa e inadimplência.</li>
+            <li><b>Pronto para vender como SaaS.</b> Planos, assinatura recorrente, nota da mensalidade emitida automaticamente e bloqueio por atraso.</li>
+            <li><b>Ordens de serviço.</b> Pré-OS aprovada pelo cliente, lojas, técnicos e um link seguro para o técnico preencher em campo.</li>
+          </ul>
+          <ul class="case__list reveal" data-lens-only="dev">
+            <li><b>Monolito modular multi-tenant.</b> Isolamento por empresa resolvido no middleware e aplicado automaticamente a todos os models; módulos ligados por feature flag e protegidos na rota.</li>
+            <li><b>Consistência transacional.</b> Venda, itens e financeiro na mesma transação, lock de linha para saldo de estoque e de conta, numeração sequencial por empresa.</li>
+            <li><b>Snapshots fiscais.</b> Venda e nota guardam os dados do momento da emissão e nunca dependem do cadastro vivo.</li>
+            <li><b>Emissão assíncrona e idempotente.</b> Worker fiscal dedicado, webhooks duráveis e trilha de eventos por documento.</li>
+            <li><b>Nada se apaga.</b> Documentos com vínculo são cancelados com estorno, preservando a auditoria.</li>
+          </ul>
+
+          <p class="case__stack mono">AdonisJS · TypeScript · PostgreSQL · React · TanStack Query · Tailwind · Nginx · PM2</p>
+          <a class="case__link" href="https://www.ordenahub.com.br" target="_blank" rel="noopener">Acessar o OrdenaHub<span aria-hidden="true">↗</span></a>
+        </div>
+
+        <!-- Visual: empresa logada, módulos por ramo e o fluxo andando etapa por etapa -->
+        <div class="case__visual visual-flow reveal" data-oh>
+          <div class="vf__url" aria-live="polite"><i class="vf__lock" aria-hidden="true"></i><span class="mono"><span class="dim">https://</span>www.ordenahub.com.br</span><span class="vf__who mono"><span class="dim">empresa</span> <b data-oh-host></b><span class="vf__caret" aria-hidden="true"></span></span></div>
+          <div class="vf__tenants" role="group" aria-label="Simular o ramo da empresa" data-oh-tenants></div>
+          <p class="vf__any mono">+ qualquer ramo: os módulos são ligados por empresa</p>
+          <div class="vf__mods" data-oh-mods></div>
+          <div class="vf__pipeline" data-oh-pipe></div>
+          <div class="vf__rows" data-oh-rows></div>
+          <ol class="vf__log mono" data-oh-log aria-hidden="true"></ol>
+          <div class="vf__cards" data-oh-cards></div>
+          <ul class="vf__trust mono"><li>dados isolados por empresa</li><li>NF-e com contingência</li><li>auditoria por documento</li></ul>
+          <p class="visual-caption mono">clique num ramo · dados ilustrativos</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- Vetnix -->
+    <article id="vetnix" class="case case--flip" data-tone="mint" data-chapter="Vetnix">
+      <div class="container case__grid">
+        <div class="case__info">
+          <h3 class="case__title split">Vetnix</h3>
+          <p class="case__pitch reveal">Gestão veterinária completa, com a carteira digital do pet na mão do tutor.</p>
+          <p class="case__text reveal">Organiza a rotina da clínica do atendimento à alta: agenda, prontuário, internação, prescrições, receituário, hotel, orçamentos e cobranças. Do outro lado, o tutor acompanha o próprio animal pelo portal, com vacinas, boletins e orientações sempre atualizados.</p>
+
+          <ul class="case__list reveal" data-lens-only="rec cli">
+            <li><b>Plantão por turno.</b> Quem assume vê o que aconteceu, o que falta e qual medicação vence agora, com histórico de cada alteração.</li>
+            <li><b>Internação.</b> Sinais vitais, prescrições e registro de cada dose aplicada.</li>
+            <li><b>Prontuário clínico.</b> Anamnese, exame físico, exames, documentos e receituário em PDF.</li>
+            <li><b>Carteira digital do pet.</b> Vacinas, próximas doses e boletins no portal do tutor.</li>
+            <li><b>Boletim humanizado.</b> Atualização do paciente enviada ao tutor pelo WhatsApp.</li>
+            <li><b>Gestão da clínica.</b> Agenda, hotel, orçamentos, cobranças e assinatura mensal por clínica.</li>
+          </ul>
+          <ul class="case__list reveal" data-lens-only="dev">
+            <li><b>Rastreabilidade clínica.</b> Cada edição do plantão gera um snapshot no histórico: quem mudou, o quê e quando.</li>
+            <li><b>Formulários tipados de ponta a ponta.</b> React Hook Form com Zod no front e validação no back.</li>
+            <li><b>Estado bem separado.</b> TanStack Query para dados do servidor, Zustand para estado de tela.</li>
+            <li><b>Perfis e acesso.</b> Admin, veterinário e técnico, mais um superadmin que gerencia as assinaturas das clínicas; portal do tutor com acesso próprio.</li>
+            <li><b>Documentos gerados no cliente.</b> Receituário e documentos clínicos exportados em PDF.</li>
+          </ul>
+
+          <p class="case__stack mono">AdonisJS 6 · PostgreSQL · React · Vite · TanStack Query · Zustand · React Hook Form · Zod · jsPDF</p>
+        </div>
+
+        <!-- Visual: monitor de plantão + carteira digital do pet -->
+        <div class="case__visual visual-vet reveal">
+          <div class="vv__monitor">
+            <div class="vv__head">
+              <span class="mono">plantão · noite</span>
+            </div>
+            <svg class="vv__ecg" viewBox="0 0 600 120" preserveAspectRatio="none" aria-hidden="true">
+              <path class="vv__ecg-base" pathLength="1000" d="M0 60 H90 L105 60 L115 30 L128 98 L140 12 L152 82 L162 60 H260 L275 60 L285 34 L298 96 L310 14 L322 80 L332 60 H430 L445 60 L455 32 L468 97 L480 13 L492 81 L502 60 H600" />
+              <path class="vv__ecg-path" pathLength="1000" d="M0 60 H90 L105 60 L115 30 L128 98 L140 12 L152 82 L162 60 H260 L275 60 L285 34 L298 96 L310 14 L322 80 L332 60 H430 L445 60 L455 32 L468 97 L480 13 L492 81 L502 60 H600" />
+            </svg>
+            <div class="vv__board" aria-hidden="true">
+              <div class="vv__col"><p class="mono dim">20h</p><span class="vv__dose vv__dose--done">Dipirona · Thor</span><span class="vv__dose vv__dose--done">Soro · Mel</span></div>
+              <div class="vv__col"><p class="mono dim">22h</p><span class="vv__dose vv__dose--done">Ondansetrona · Luna</span><span class="vv__dose vv__dose--next">Amoxicilina · Thor</span></div>
+              <div class="vv__col"><p class="mono dim">00h</p><span class="vv__dose">Meloxicam · Mel</span><span class="vv__dose">Curativo · Fred</span></div>
+            </div>
+            <p class="vv__next"><span class="mono dim">próxima dose em</span> <b data-countdown>12:00</b></p>
+          </div>
+
+          <div class="vv__phone" aria-label="Carteira digital do pet, ilustração">
+            <span class="vv__notch" aria-hidden="true"></span>
+            <div class="vv__pet">
+              <span class="vv__avatar" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 13.5c-2.6 0-5 2.2-5 4.4 0 1.4 1.1 2.1 2.5 2.1 1 0 1.6-.5 2.5-.5s1.5.5 2.5.5c1.4 0 2.5-.7 2.5-2.1 0-2.2-2.4-4.4-5-4.4zM6.2 12.6c1.1-.3 1.6-1.8 1.1-3.2-.5-1.5-1.9-2.4-3-2.1-1.1.3-1.6 1.8-1.1 3.2.5 1.5 1.9 2.4 3 2.1zm3.4-3.4c1.3 0 2.2-1.4 2.2-3.1S10.9 3 9.6 3 7.4 4.4 7.4 6.1s.9 3.1 2.2 3.1zm4.8 0c1.3 0 2.2-1.4 2.2-3.1S15.7 3 14.4 3s-2.2 1.4-2.2 3.1.9 3.1 2.2 3.1zm5.3-1.9c-1.1-.3-2.5.6-3 2.1-.5 1.4 0 2.9 1.1 3.2 1.1.3 2.5-.6 3-2.1.5-1.4 0-2.9-1.1-3.2z"/></svg></span>
+              <div><b>Thor</b><small>Golden Retriever, 4 anos</small></div>
+            </div>
+            <div class="vv__tabs" role="tablist" aria-label="Carteira do pet">
+              <button type="button" role="tab" aria-selected="true" data-vx-tab="vacinas">Vacinas</button>
+              <button type="button" role="tab" aria-selected="false" data-vx-tab="boletins">Boletins</button>
+              <button type="button" role="tab" aria-selected="false" data-vx-tab="consultas">Consultas</button>
+            </div>
+            <div class="vv__panel" data-vx-panel role="tabpanel"></div>
+          </div>
+          <p class="visual-caption mono">dados ilustrativos</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- Mix Awards -->
+    <article id="mixawards" class="case" data-tone="gold" data-chapter="Mix Awards">
+      <div class="container case__grid">
+        <div class="case__info">
+          <h3 class="case__title split">Mix Awards</h3>
+          <p class="case__pitch reveal">Partidas da GamersClub transformadas em estatística, economia e coleção.</p>
+          <p class="case__text reveal">Os dados de cada partida jogada na GamersClub são importados para o sistema, que calcula as estatísticas de cada jogador, gera gráficos e ranking e converte desempenho em Gold, a moeda da plataforma. Com o Gold, os jogadores compram cápsulas na loja, abrem figurinhas com raridades e disputam quem completa o álbum da temporada.</p>
+
+          <ul class="case__list reveal" data-lens-only="rec cli">
+            <li><b>Importação de partidas.</b> Estatísticas por jogador: kills, ADR, KAST, K/D, first kills, multi kills e flash assists.</li>
+            <li><b>Gráficos e ranking.</b> Dashboards de desempenho, ranking geral e de duplas, e confrontos diretos entre jogadores.</li>
+            <li><b>Economia própria.</b> Gold por desempenho, loja de cápsulas e abertura de figurinhas com raridade e probabilidade.</li>
+            <li><b>Coleção e progressão.</b> Álbum de figurinhas e de assinaturas, níveis, missões com reroll, molduras e títulos.</li>
+            <li><b>Comunidade.</b> Sorteio de times equilibrado, apostas com odds, Copa do Mundo e a cerimônia Mix Awards no fim de cada temporada.</li>
+          </ul>
+          <ul class="case__list reveal" data-lens-only="dev">
+            <li><b>Pipeline de importação.</b> O JSON da partida é normalizado, cada jogador recebe suas métricas e o vencedor é calculado pelo placar.</li>
+            <li><b>Ranking consistente.</b> Excluir uma partida recalcula pontos, vitórias e bônus de todos os envolvidos.</li>
+            <li><b>Sorteio ponderado.</b> Raridades e probabilidades num único ponto de configuração, fácil de balancear.</li>
+            <li><b>Sistemas isolados.</b> Níveis, missões e premiação da temporada como módulos próprios no back-end.</li>
+            <li><b>Interface com movimento.</b> Abertura de cápsulas com roleta, efeito holográfico e "revelar tudo", em Framer Motion.</li>
+          </ul>
+
+          <p class="case__stack mono">AdonisJS · TypeScript · PostgreSQL · React · Framer Motion · Tailwind · Vite</p>
+          <a class="case__link" href="https://www.mixawards.com.br" target="_blank" rel="noopener">Acessar o Mix Awards<span aria-hidden="true">↗</span></a>
+        </div>
+
+        <!-- Visual: partida importada + figurinha holográfica + cápsula jogável -->
+        <div class="case__visual visual-mix reveal">
+          <div class="mx__match">
+            <div class="mx__head"><span class="mono dim">partida importada · GamersClub</span><b>de_mirage <em>13</em><i>:</i><em class="lose">9</em></b></div>
+            <table class="mx__table">
+              <thead><tr><th scope="col">Jogador</th><th scope="col">K</th><th scope="col">D</th><th scope="col">ADR</th><th scope="col">KAST</th><th scope="col">Gold</th></tr></thead>
+              <tbody>
+                <tr><td>kzn</td><td>27</td><td>14</td><td>112</td><td>81%</td><td class="gold">+46</td></tr>
+                <tr><td>raelzin</td><td>22</td><td>15</td><td>98</td><td>77%</td><td class="gold">+39</td></tr>
+                <tr><td>dudu.exe</td><td>18</td><td>16</td><td>84</td><td>72%</td><td class="gold">+31</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="mx__row">
+            <div class="holo" data-holo>
+              <button type="button" class="pack" data-pack aria-label="Abrir pacote de figurinhas">
+                <span class="pack__top"><i></i></span>
+                <span class="pack__body">
+                  <span class="pack__brand">MIX<b>AWARDS</b></span>
+                  <svg class="pack__trophy" viewBox="0 0 64 64" aria-hidden="true"><path d="M18 8h28v10a14 14 0 0 1-28 0zM18 12H8a10 10 0 0 0 12 12M46 12h10a10 10 0 0 1-12 12M28 32h8v10h-8zM20 46h24v6H20z"/></svg>
+                  <span class="pack__note">contém 1 figurinha</span>
+                </span>
+                <span class="pack__flash"></span>
+              </button>
+              <div class="holo__card" data-holo-card data-rarity="god">
+                <img class="holo__img" data-holo-img src="assets/img/stickers/c7.webp" alt="" width="300" height="450" draggable="false" />
+                <div class="holo__shine" aria-hidden="true"></div>
+                <p class="holo__rarity mono" data-holo-rarity>GOD</p>
+              </div>
+            </div>
+            <div class="capsule">
+              <p class="capsule__title">Pacote de figurinhas</p>
+              <button type="button" class="btn btn--primary" data-capsule>Abrir pacote</button>
+              <p class="mono dim capsule__odds">normal 70 · épica 20 · lendária 7 · mítica 2,5 · GOD 0,5</p>
+              <p class="capsule__log mono" data-capsule-log aria-live="polite">clique no pacote para abrir</p>
+            </div>
+          </div>
+          <p class="visual-caption mono">dados ilustrativos</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- ============================== CONHECIMENTOS ============================== -->
+    <section id="stack" class="stack container" data-tone="lime" data-chapter="conhecimentos">
+      <header class="section-head">
+        <p class="eyebrow"><span class="eyebrow__num">05</span> Conhecimentos</p>
+        <h2 class="section-title split">Do <em>banco</em> à interface, e o modelo no meio.</h2>
+      </header>
+      <div class="inv" data-stack>
+        <aside class="inv__side">
+          <p class="inv__label mono">inventário · escolha uma fase</p>
+          <div class="inv__saves" role="group" aria-label="Mostrar o que usei em cada experiência" data-stack-filter>
+            <button type="button" aria-pressed="true" data-filter="all" style="--tone: var(--accent)"><i aria-hidden="true"></i><b>Tudo</b><small>2015 → hoje</small></button>
+            <button type="button" aria-pressed="false" data-filter="C" style="--tone: var(--ember-400)"><i aria-hidden="true"></i><b>Cadastra</b><small>2025 → hoje</small></button>
+            <button type="button" aria-pressed="false" data-filter="S" style="--tone: var(--sky-200)"><i aria-hidden="true"></i><b>Mercadinho do Zé</b><small>2024 → 2025</small></button>
+            <button type="button" aria-pressed="false" data-filter="I" style="--tone: var(--sky-400)"><i aria-hidden="true"></i><b>Itaú via TCS</b><small>2020 → 2024</small></button>
+            <button type="button" aria-pressed="false" data-filter="P" style="--tone: var(--lime-400)"><i aria-hidden="true"></i><b>Produtos próprios</b><small>2025 → hoje</small></button>
+          </div>
+          <div class="inv__detail" data-stack-detail aria-live="polite"></div>
+          <ul class="inv__legend mono" aria-label="Raridade">
+            <li class="r1">comum · 1 fase</li><li class="r2">incomum · 2</li><li class="r3">rara · 3</li><li class="r4">lendária · 4</li>
+          </ul>
+        </aside>
+        <div class="inv__bag" data-stack-bag></div>
+      </div>
+    </section>
+
+    <!-- ============================== CONTATO ============================== -->
+    <section id="contato" class="contact" data-tone="lime" data-chapter="contato">
+      <div class="container">
+        <p class="eyebrow"><span class="eyebrow__num">06</span> Contato</p>
+        <h2 class="contact__title split">Vamos construir algo <em>juntos</em>?</h2>
+        <p class="lead reveal">Estou aberto a posições de engenharia de software, especialmente em times que constroem produtos com IA, e a projetos sob medida.</p>
+        <div class="contact__grid">
+          <button type="button" class="contact__card" data-copy="rafael.carvalho.xd1@gmail.com">
+            <span class="mono dim">e-mail</span>
+            <b>rafael.carvalho.xd1@gmail.com</b>
+            <span class="contact__action" data-copy-label>copiar</span>
+          </button>
+          <a class="contact__card" href="https://www.linkedin.com/in/rafah-carvalho/" target="_blank" rel="noopener">
+            <span class="mono dim">linkedin</span>
+            <b>in/rafah-carvalho</b>
+            <span class="contact__action">abrir ↗</span>
+          </a>
+          <a class="contact__card" href="https://github.com/raelcarvalho" target="_blank" rel="noopener">
+            <span class="mono dim">github</span>
+            <b>raelcarvalho</b>
+            <span class="contact__action">abrir ↗</span>
+          </a>
+          <a class="contact__card" href="assets/docs/curriculo-rafael-carvalho.pdf" download>
+            <span class="mono dim">currículo</span>
+            <b>PDF, 4 páginas</b>
+            <span class="contact__action">baixar ↓</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <div class="footer__memory">
+      <p class="mono dim">O que este site lembra de você</p>
+      <p data-memory-summary>Nada ainda.</p>
+      <div class="footer__actions">
+        <button type="button" class="link-btn" data-forget>Esquecer minha visita</button>
+      </div>
+    </div>
+    <p class="mono dim footer__sign">Feito à mão por Rafael Carvalho · 2026 · a memória fica só no seu navegador, nada é enviado.</p>
+  </footer>
+
+  <!-- ============================== ASSISTENTE (Ctrl K) ============================== -->
+  <div class="dock" data-dock hidden>
+    <div class="dock__backdrop" data-close-agent></div>
+    <div class="dock__panel" role="dialog" aria-modal="true" aria-labelledby="dock-title">
+      <header class="dock__head">
+        <div>
+          <p id="dock-title" class="dock__title">Pergunte ao portfólio</p>
+          <p class="mono dim dock__sub">respostas escritas pelo Rafael · cada uma mostra a fonte</p>
+        </div>
+        <button type="button" class="dock__close" data-close-agent aria-label="Fechar">Esc</button>
+      </header>
+      <div class="dock__log" data-dock-log aria-live="polite"></div>
+      <div class="dock__suggest" data-dock-suggest></div>
+      <form class="dock__form" data-dock-form>
+        <input type="text" name="q" autocomplete="off" placeholder="Ex.: onde você já trabalhou?" aria-label="Sua pergunta" data-dock-input />
+        <button type="submit" class="btn btn--primary">Enviar</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="toast" data-toast role="status" aria-live="polite"></div>
+
+  <script src="assets/js/career-blueprint.js?v=lang-4" defer></script>
+  <script src="assets/js/portfolio-kb.js?v=lang-4" defer></script>
+  <script src="assets/js/i18n.js?v=lang-4" defer></script>
+  <script src="assets/js/app.js?v=lang-4" defer></script>
+</body>
+</html>

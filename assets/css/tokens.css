@@ -1,0 +1,131 @@
+/* ==========================================================================
+   Design tokens — três camadas: primitivo → semântico → componente.
+   Trocar uma cor aqui muda o site inteiro; componentes nunca usam hex direto.
+   ========================================================================== */
+
+/* A cor de destaque é animável: cada seção troca --accent e a página inteira
+   faz a transição de tom junto. */
+@property --accent {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: #c8f560;
+}
+@property --accent-soft {
+  syntax: '<color>';
+  inherits: true;
+  initial-value: rgba(200, 245, 96, 0.12);
+}
+
+:root {
+  /* ---------- 1. Primitivos ---------- */
+  --ink-1000: #070806;
+  --ink-950: #0b0c0a;
+  --ink-900: #111210;
+  --ink-850: #171815;
+  --ink-800: #1e1f1b;
+  --ink-700: #2b2c27;
+  --ink-600: #3c3d36;
+  --ink-500: #64655c;
+  --ink-400: #8a8b81;
+  --ink-300: #b2b3a9;
+  --paper-200: #dddcd3;
+  --paper-100: #ecebe3;
+  --paper-50: #f6f5ef;
+
+  --lime-400: #c8f560;   /* sinal — identidade pessoal */
+  --ember-400: #ff7a45;  /* IA / Cadastra */
+  --violet-400: #9a7dff; /* OrdenaHub */
+  --mint-400: #48e2b8;   /* Vetnix */
+  --coral-400: #ff9f7a;  /* Vetnix — tutor e pet */
+  --gold-400: #f4c652;   /* Mix Awards */
+  --rose-400: #ff6f91;
+  --sky-400: #6aa8ff;    /* Itaú via TCS */
+  --sky-200: #a9cbff;    /* Seguros */
+
+  --font-display: 'Bricolage Grotesque', 'Geist', system-ui, sans-serif;
+  --font-sans: 'Geist', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: 'Geist Mono', ui-monospace, 'Cascadia Code', Consolas, monospace;
+  --font-serif: 'Instrument Serif', Georgia, serif;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 96px;
+  --space-10: 144px;
+
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  --radius-pill: 999px;
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-fast: 160ms;
+  --dur-base: 320ms;
+  --dur-slow: 900ms;
+
+  /* ---------- 2. Semânticos ---------- */
+  --bg: var(--ink-950);
+  --bg-deep: var(--ink-1000);
+  --surface: var(--ink-900);
+  --surface-2: var(--ink-850);
+  --surface-3: var(--ink-800);
+  --line: rgba(236, 235, 227, 0.08);
+  --line-strong: rgba(236, 235, 227, 0.16);
+  --text: var(--paper-100);
+  --text-muted: var(--ink-300);
+  --text-dim: var(--ink-400);
+  --text-faint: var(--ink-500);
+  --accent: var(--lime-400);
+  --accent-soft: rgba(200, 245, 96, 0.12);
+  --accent-ink: var(--ink-950);
+  --focus-ring: 0 0 0 2px var(--bg), 0 0 0 4px var(--accent);
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: clamp(1.25rem, 1.1rem + 0.6vw, 1.5rem);
+  --text-2xl: clamp(1.6rem, 1.2rem + 1.6vw, 2.4rem);
+  --text-3xl: clamp(2.2rem, 1.4rem + 3.4vw, 4.4rem);
+  --text-name: clamp(3rem, 0.8rem + 7.6vw, 7.8rem);
+
+  /* ---------- 3. Componentes ---------- */
+  --card-bg: color-mix(in srgb, var(--surface) 82%, transparent);
+  --card-border: var(--line);
+  --card-radius: var(--radius-lg);
+  --chip-bg: rgba(236, 235, 227, 0.05);
+  --chip-border: var(--line);
+  --chip-text: var(--text-muted);
+  --btn-primary-bg: var(--accent);
+  --btn-primary-text: var(--accent-ink);
+  --btn-ghost-border: var(--line-strong);
+  --header-bg: color-mix(in srgb, var(--bg) 72%, transparent);
+  --dock-bg: color-mix(in srgb, var(--ink-900) 94%, transparent);
+  --heat-0: rgba(236, 235, 227, 0.06);
+  --heat-1: rgba(200, 245, 96, 0.25);
+  --heat-2: rgba(200, 245, 96, 0.45);
+  --heat-3: rgba(200, 245, 96, 0.7);
+  --heat-4: #c8f560;
+
+  /* Ponteiro do sistema redesenhado: precisão nativa, sem atraso.
+     A ponta da seta e o centro do alvo são exatamente o ponto do clique. */
+  --cursor-arrow: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='26' height='26' viewBox='0 0 26 26'%3E%3Cpath d='M4 2.5v18.2l4.9-4.6 3.4 7.4 3.3-1.5-3.3-7.2h6.6z' fill='%23c8f560' stroke='%230b0c0a' stroke-width='1.6' stroke-linejoin='round'/%3E%3C/svg%3E") 4 3, auto;
+  --cursor-target: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='11' fill='rgba(200,245,96,0.14)' stroke='%23c8f560' stroke-width='1.6'/%3E%3Ccircle cx='16' cy='16' r='3.2' fill='%23ecebe3' stroke='%230b0c0a' stroke-width='1'/%3E%3C/svg%3E") 16 16, pointer;
+
+  transition: --accent var(--dur-slow) var(--ease-in-out),
+    --accent-soft var(--dur-slow) var(--ease-in-out);
+}
+
+/* Cada seção declara sua cor; o script copia para :root ao entrar nela. */
+[data-tone='lime'] { --tone: var(--lime-400); --tone-soft: rgba(200, 245, 96, 0.12); }
+[data-tone='ember'] { --tone: var(--ember-400); --tone-soft: rgba(255, 122, 69, 0.13); }
+[data-tone='violet'] { --tone: var(--violet-400); --tone-soft: rgba(154, 125, 255, 0.14); }
+[data-tone='mint'] { --tone: var(--mint-400); --tone-soft: rgba(72, 226, 184, 0.12); }
+[data-tone='gold'] { --tone: var(--gold-400); --tone-soft: rgba(244, 198, 82, 0.13); }

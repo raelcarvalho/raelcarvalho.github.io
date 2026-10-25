@@ -1,0 +1,40 @@
+# Segredos e configuração local (nunca sobem)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+secrets/
+credentials*.json
+
+# Dependências e saídas de build
+node_modules/
+dist/
+build/
+coverage/
+.cache/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Ferramentas de IA e automação (prints, rascunhos e planos de trabalho)
+.claude/
+.playwright-mcp/
+.superpowers/
+docs/superpowers/
+
+# Editor e sistema operacional
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Arquivos temporários
+*.tmp
+*.bak
+tmp/

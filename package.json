@@ -1,0 +1,12 @@
+{
+  "name": "rafael-portfolio",
+  "private": true,
+  "description": "Portfólio de Rafael Carvalho, site estático publicado no GitHub Pages.",
+  "scripts": {
+    "start": "npx --yes serve -l 8080 .",
+    "test": "node --test \"tests/*.test.cjs\""
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
