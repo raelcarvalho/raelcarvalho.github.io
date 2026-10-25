@@ -13,6 +13,23 @@
   const LENS_NAMES = { rec: 'Recrutador', dev: 'Dev', cli: 'Cliente' };
   const tr = (s) => (window.I18N ? window.I18N.t(s) : s);
 
+  /* Links internos rolam até a seção sem colocar "#secao" na URL */
+  const cleanUrl = () => history.replaceState(null, '', location.pathname + location.search);
+  document.addEventListener('click', (e) => {
+    const a = e.target.closest('a[href^="#"]');
+    if (!a || e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey) return;
+    const id = decodeURIComponent(a.getAttribute('href').slice(1));
+    const target = id ? document.getElementById(id) : document.body;
+    if (!target) return;
+    e.preventDefault();
+    target.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth', block: 'start' });
+    if (target.tabIndex < 0 && !/^(A|BUTTON|INPUT|TEXTAREA|SELECT)$/.test(target.tagName)) target.setAttribute('tabindex', '-1');
+    target.focus({ preventScroll: true });
+    if (location.hash) cleanUrl();
+  });
+  // Quem chega por um link antigo com #: o navegador rola até a seção e a URL fica limpa
+  if (location.hash) addEventListener('load', () => setTimeout(cleanUrl, 0), { once: true });
+
   /* ------------------------------------------------------------------------
      Dados
      ------------------------------------------------------------------------ */
