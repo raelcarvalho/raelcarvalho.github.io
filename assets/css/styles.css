@@ -978,3 +978,9 @@ body.is-ready .line__in { transform: none; }
 .status-pill__eye { width: 13px; height: 9px; border: 1.5px solid var(--accent); border-radius: 50% / 60%; position: relative; }
 .status-pill__eye::after { content: ''; position: absolute; inset: 0; margin: auto; width: 4px; height: 4px; border-radius: 50%; background: var(--accent); }
 @media (max-width: 420px) { .status-pill { flex-wrap: wrap; row-gap: 2px; } }
+
+/* Cargos em destaque no topo */
+.hero__roles { display: flex; flex-wrap: wrap; gap: 8px; letter-spacing: 0.1em; }
+.hero__role { display: inline-flex; align-items: center; padding: 7px 14px; border-radius: var(--radius-pill); border: 1px solid var(--line-strong); background: color-mix(in srgb, var(--surface-2) 70%, transparent); color: var(--text); font-size: 0.78rem; font-weight: 500; backdrop-filter: blur(6px); }
+.hero__role--main { color: var(--ink-950, #0b0c0a); background: var(--accent); border-color: var(--accent); box-shadow: 0 8px 28px -10px var(--accent); }
+@media (max-width: 720px) { .hero__role { font-size: 0.66rem; padding: 6px 11px; } }
