@@ -1117,11 +1117,39 @@
       .catch(() => { /* sem contador, sem selo */ });
   }
 
+
+  /* ------------------------------------------------------------------------
+     Contribuições no GitHub nos últimos 12 meses, lidas do calendário público
+     do perfil. Se o serviço falhar, fica o último número conhecido do HTML.
+     ------------------------------------------------------------------------ */
+  function contributions() {
+    const el = $('[data-contrib]');
+    if (!el || !window.fetch) return;
+    const KEY = 'rc-contrib';
+    const show = (n) => { el.textContent = n.toLocaleString(document.documentElement.lang.startsWith('en') ? 'en-US' : 'pt-BR'); };
+    try {
+      const c = JSON.parse(sessionStorage.getItem(KEY) || 'null');
+      if (c && Date.now() - c.t < 30 * 60 * 1000) { show(c.n); return; }
+    } catch (e) { /* sem cache */ }
+    const ctrl = new AbortController();
+    setTimeout(() => ctrl.abort(), 6000);
+    fetch('https://github-contributions-api.jogruber.de/v4/raelcarvalho?y=last', { signal: ctrl.signal })
+      .then((r) => (r.ok ? r.json() : Promise.reject(r.status)))
+      .then((d) => {
+        const n = d && d.total && d.total.lastYear;
+        if (!Number.isFinite(n) || n < 1) return;
+        show(n);
+        if (window.I18N) window.I18N.onChange(() => show(n));
+        try { sessionStorage.setItem(KEY, JSON.stringify({ n, t: Date.now() })); } catch (e) { /* ok */ }
+      })
+      .catch(() => { /* mantém o número do HTML */ });
+  }
+
   /* ------------------------------------------------------------------------
      Início
      ------------------------------------------------------------------------ */
   // Cada parte roda isolada: se uma falhar num navegador antigo, as outras continuam.
-  [splitWords, ticker, heatmap, stack, lensSwitch, initialChip, clock, reveals, chapters, journey, scrollChrome, field, rotator, agentDemo, ordenahub, vetnix, holo, copy, dockInit, forget, renderMemorySummary, mobileFolds, visits].forEach((fn) => {
+  [splitWords, ticker, heatmap, stack, lensSwitch, initialChip, clock, reveals, chapters, journey, scrollChrome, field, rotator, agentDemo, ordenahub, vetnix, holo, copy, dockInit, forget, renderMemorySummary, mobileFolds, visits, contributions].forEach((fn) => {
     try { fn(); } catch (err) { console.error(`[${fn.name}]`, err); }
   });
   save();

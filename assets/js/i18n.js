@@ -23,7 +23,7 @@
     'carregando trajetória…': 'loading journey…', 'carregando carreira…': 'loading career…', 'conectando agentes…': 'connecting agents…', 'pronto.': 'ready.',
     'retomando de onde você estava…': 'picking up where you left off…',
     'Aberto a novas oportunidades': 'Open to new opportunities',
-    'desde 2020 desenvolvendo · 384 contribuições no último ano': 'building software since 2020 · 384 contributions last year',
+    'desde 2020 desenvolvendo': 'building software since 2020', 'contribuições no último ano': 'contributions last year',
     'Engenheiro de software full stack': 'Full stack software engineer', 'IA generativa': 'Generative AI', 'Sistemas financeiros': 'Financial systems',
     'Construo': 'I build',
     'sistemas financeiros.': 'financial systems.', 'produtos SaaS.': 'SaaS products.', 'agentes de IA.': 'AI agents.', 'integrações que não falham.': 'integrations that don’t fail.',
