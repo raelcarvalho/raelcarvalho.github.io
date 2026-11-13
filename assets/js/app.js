@@ -1145,11 +1145,50 @@
       .catch(() => { /* mantém o número do HTML */ });
   }
 
+
+  /* ------------------------------------------------------------------------
+     Vídeo em loop sem trava: o "loop" nativo dá um soluço ao voltar para o
+     início. Aqui dois players se revezam: perto do fim, o outro já começa do
+     zero e entra por cima com um fade curto. Pausa fora da tela.
+     ------------------------------------------------------------------------ */
+  function loopVideos() {
+    $$('[data-loop-video]').forEach((box) => {
+      const [a, b] = $$('video', box);
+      if (!a || !b) return;
+      const FADE = 0.6;
+      let cur = a, next = b, visible = false, swapping = false;
+      const play = (v) => { const p = v.play(); if (p) p.catch(() => {}); };
+      const check = () => {
+        if (!visible) return;
+        const d = cur.duration;
+        if (!swapping && d && cur.currentTime >= d - FADE - 0.05) {
+          swapping = true;
+          next.currentTime = 0;
+          play(next);
+          next.style.opacity = '1';
+          cur.style.opacity = '0';
+          const old = cur;
+          setTimeout(() => { old.pause(); old.currentTime = 0; swapping = false; }, FADE * 1000 + 50);
+          [cur, next] = [next, cur];
+          next.style.zIndex = '0'; cur.style.zIndex = '1';
+        }
+        requestAnimationFrame(check);
+      };
+      a.style.zIndex = '1';
+      new IntersectionObserver(([en]) => {
+        const was = visible;
+        visible = en.isIntersecting;
+        if (visible && !was) { play(cur); requestAnimationFrame(check); }
+        if (!visible) { a.pause(); b.pause(); }
+      }, { threshold: 0.2 }).observe(box);
+    });
+  }
+
   /* ------------------------------------------------------------------------
      Início
      ------------------------------------------------------------------------ */
   // Cada parte roda isolada: se uma falhar num navegador antigo, as outras continuam.
-  [splitWords, ticker, heatmap, stack, lensSwitch, initialChip, clock, reveals, chapters, journey, scrollChrome, field, rotator, agentDemo, ordenahub, vetnix, holo, copy, dockInit, forget, renderMemorySummary, mobileFolds, visits, contributions].forEach((fn) => {
+  [splitWords, ticker, heatmap, stack, lensSwitch, initialChip, clock, reveals, chapters, journey, scrollChrome, field, rotator, agentDemo, ordenahub, vetnix, holo, copy, dockInit, forget, renderMemorySummary, mobileFolds, visits, contributions, loopVideos].forEach((fn) => {
     try { fn(); } catch (err) { console.error(`[${fn.name}]`, err); }
   });
   save();
